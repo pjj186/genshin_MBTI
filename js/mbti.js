@@ -210,6 +210,9 @@ const showLumine = () => {
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
   paymon.classList = "hide";
+  const restartBtn = document.createElement("button");
+  restartBtn.innerText = "다시 검사 할래?";
+  restartBtn.className = "restartBtn";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
   const characterName = document.createElement("span");
@@ -231,9 +234,13 @@ const showLumine = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
+  restartBtn.addEventListener("click", () => {
+    location.reload();
+  });
 };
 const showRazor = () => {
   // 레이저, ISFP
@@ -241,6 +248,9 @@ const showRazor = () => {
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
   paymon.classList = "hide";
+  const restartBtn = document.createElement("button");
+  restartBtn.innerText = "다시 검사 할래?";
+  restartBtn.className = "restartBtn";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
   const characterName = document.createElement("span");
@@ -262,9 +272,13 @@ const showRazor = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
+  restartBtn.addEventListener("click", () => {
+    location.reload();
+  });
 };
 const showSucrose = () => {
   // 설탕, INTP
@@ -273,6 +287,9 @@ const showSucrose = () => {
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
   paymon.classList = "hide";
+  const restartBtn = document.createElement("button");
+  restartBtn.innerText = "다시 검사 할래?";
+  restartBtn.className = "restartBtn";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
   const characterName = document.createElement("span");
@@ -295,9 +312,13 @@ const showSucrose = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
+  restartBtn.addEventListener("click", () => {
+    location.reload();
+  });
 };
 const showMona = () => {
   // 모나, INTJ
@@ -305,6 +326,9 @@ const showMona = () => {
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
   paymon.classList = "hide";
+  const restartBtn = document.createElement("button");
+  restartBtn.innerText = "다시 검사 할래?";
+  restartBtn.className = "restartBtn";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
   const characterName = document.createElement("span");
@@ -327,9 +351,13 @@ const showMona = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
+  restartBtn.addEventListener("click", () => {
+    location.reload();
+  });
 };
 const showFischl = () => {
   // 피슬, INFP
@@ -337,6 +365,9 @@ const showFischl = () => {
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
   paymon.classList = "hide";
+  const restartBtn = document.createElement("button");
+  restartBtn.innerText = "다시 검사 할래?";
+  restartBtn.className = "restartBtn";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
   const characterName = document.createElement("span");
@@ -359,9 +390,13 @@ const showFischl = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
+  restartBtn.addEventListener("click", () => {
+    location.reload();
+  });
 };
 const showXingqiu = () => {
   // 행추, INFJ
@@ -370,6 +405,9 @@ const showXingqiu = () => {
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
   paymon.classList = "hide";
+  const restartBtn = document.createElement("button");
+  restartBtn.innerText = "다시 검사 할래?";
+  restartBtn.className = "restartBtn";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
   const characterName = document.createElement("span");
@@ -392,9 +430,13 @@ const showXingqiu = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
+  restartBtn.addEventListener("click", () => {
+    location.reload();
+  });
 };
 const showXiao = () => {
   // 소, ISTJ
@@ -402,6 +444,9 @@ const showXiao = () => {
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
   paymon.classList = "hide";
+  const restartBtn = document.createElement("button");
+  restartBtn.innerText = "다시 검사 할래?";
+  restartBtn.className = "restartBtn";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
   const characterName = document.createElement("span");
@@ -424,9 +469,13 @@ const showXiao = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
+  restartBtn.addEventListener("click", () => {
+    location.reload();
+  });
 };
 const showJean = () => {
   // 진, ISFJ
@@ -434,6 +483,9 @@ const showJean = () => {
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
   paymon.classList = "hide";
+  const restartBtn = document.createElement("button");
+  restartBtn.innerText = "다시 검사 할래?";
+  restartBtn.className = "restartBtn";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
   const characterName = document.createElement("span");
@@ -455,9 +507,13 @@ const showJean = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
+  restartBtn.addEventListener("click", () => {
+    location.reload();
+  });
 };
 const showChilde = () => {
   // 타르탈리아, ESTP
@@ -465,6 +521,9 @@ const showChilde = () => {
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
   paymon.classList = "hide";
+  const restartBtn = document.createElement("button");
+  restartBtn.innerText = "다시 검사 할래?";
+  restartBtn.className = "restartBtn";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
   const characterName = document.createElement("span");
@@ -486,9 +545,13 @@ const showChilde = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
+  restartBtn.addEventListener("click", () => {
+    location.reload();
+  });
 };
 const showClee = () => {
   // 클레, ESFP
@@ -496,6 +559,9 @@ const showClee = () => {
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
   paymon.classList = "hide";
+  const restartBtn = document.createElement("button");
+  restartBtn.innerText = "다시 검사 할래?";
+  restartBtn.className = "restartBtn";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
   const characterName = document.createElement("span");
@@ -517,9 +583,13 @@ const showClee = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
+  restartBtn.addEventListener("click", () => {
+    location.reload();
+  });
 };
 const showVenti = () => {
   // 벤티, ENTP
@@ -527,6 +597,9 @@ const showVenti = () => {
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
   paymon.classList = "hide";
+  const restartBtn = document.createElement("button");
+  restartBtn.innerText = "다시 검사 할래?";
+  restartBtn.className = "restartBtn";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
   const characterName = document.createElement("span");
@@ -549,9 +622,13 @@ const showVenti = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
+  restartBtn.addEventListener("click", () => {
+    location.reload();
+  });
 };
 const showKeqing = () => {
   // 각청, ENTJ
@@ -559,6 +636,9 @@ const showKeqing = () => {
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
   paymon.classList = "hide";
+  const restartBtn = document.createElement("button");
+  restartBtn.innerText = "다시 검사 할래?";
+  restartBtn.className = "restartBtn";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
   const characterName = document.createElement("span");
@@ -581,9 +661,13 @@ const showKeqing = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
+  restartBtn.addEventListener("click", () => {
+    location.reload();
+  });
 };
 const showHutao = () => {
   // 호두, ENFP
@@ -591,6 +675,9 @@ const showHutao = () => {
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
   paymon.classList = "hide";
+  const restartBtn = document.createElement("button");
+  restartBtn.innerText = "다시 검사 할래?";
+  restartBtn.className = "restartBtn";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
   const characterName = document.createElement("span");
@@ -612,9 +699,13 @@ const showHutao = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
+  restartBtn.addEventListener("click", () => {
+    location.reload();
+  });
 };
 const showBabara = () => {
   // 바바라, ENFJ
@@ -622,6 +713,9 @@ const showBabara = () => {
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
   paymon.classList = "hide";
+  const restartBtn = document.createElement("button");
+  restartBtn.innerText = "다시 검사 할래?";
+  restartBtn.className = "restartBtn";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
   const characterName = document.createElement("span");
@@ -643,9 +737,13 @@ const showBabara = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
+  restartBtn.addEventListener("click", () => {
+    location.reload();
+  });
 };
 const showNingguang = () => {
   // 응광, ESTJ
@@ -654,6 +752,9 @@ const showNingguang = () => {
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
   paymon.classList = "hide";
+  const restartBtn = document.createElement("button");
+  restartBtn.innerText = "다시 검사 할래?";
+  restartBtn.className = "restartBtn";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
   const characterName = document.createElement("span");
@@ -675,9 +776,14 @@ const showNingguang = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
+
+  restartBtn.addEventListener("click", () => {
+    location.reload();
+  });
 };
 const showAmber = () => {
   // 엠버, ESFJ
@@ -685,6 +791,9 @@ const showAmber = () => {
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
   paymon.classList = "hide";
+  const restartBtn = document.createElement("button");
+  restartBtn.innerText = "다시 검사 할래?";
+  restartBtn.className = "restartBtn";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
   const characterName = document.createElement("span");
@@ -706,9 +815,13 @@ const showAmber = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
+  restartBtn.addEventListener("click", () => {
+    location.reload();
+  });
 };
 
 let mbtiEI = {};
