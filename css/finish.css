@@ -1,8 +1,19 @@
-.btn__question {
+.finishBox {
+  margin-top: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.finishMent {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.finishBtn {
   all: unset;
   height: auto;
   width: auto;
-  padding: 5px;
+  padding: 10px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.699);
   text-align: center;
@@ -10,17 +21,6 @@
   margin-bottom: 10px;
 }
 
-.btn__question:hover {
+.finishBtn:hover {
   background-color: white;
-}
-
-.questionBox {
-  margin-top: 350px;
-  display: flex;
-  flex-direction: column;
-}
-
-.question {
-  font-size: 20px;
-  margin-bottom: 20px;
 }

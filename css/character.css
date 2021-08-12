@@ -5,3 +5,17 @@
   width: 500px;
   height: 700px;
 }
+
+.lumine {
+  position: absolute;
+  top: -10px;
+  width: 400px;
+  height: 600px;
+}
+
+.razor {
+  position: absolute;
+  top: -30px;
+  width: 1300px;
+  height: 600px;
+}

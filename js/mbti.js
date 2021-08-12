@@ -1,6 +1,7 @@
 const startBtn = document.querySelector(".btn__start");
 const textBox = document.querySelector(".textbox"); // 텍스트박스, 무조건 부모
 const startTextBox = document.querySelector(".textbox__start");
+const logo = document.querySelector(".logo");
 
 const questionArray = [
   "Q1. 너는 하루정도 여행을 다녀오고 싶을때 어떻게 하는편이야?",
@@ -202,16 +203,125 @@ let personality = {
   H: 0,
 };
 
-let mbti = {
-  E: personality.A,
-  I: personality.B,
-  S: personality.C,
-  N: personality.D,
-  T: personality.E,
-  F: personality.F,
-  J: personality.G,
-  P: personality.H,
+const showLumine = () => {
+  // 여행자, ISTP
+  const characterBox = document.createElement("div");
+  const characterImage = document.createElement("img");
+  characterImage.src = `../images/lumine.png`;
+  characterImage.className = "lumine";
 };
+const showRazor = () => {
+  // 레이저, ISFP
+  const characterBox = document.createElement("div");
+  const characterImage = document.createElement("img");
+  characterImage.src = `../images/razor.png`;
+  characterImage.className = "razor";
+};
+const showSucrose = () => {
+  // 설탕, INTP
+  const characterBox = document.createElement("div");
+  const characterImage = document.createElement("img");
+  characterImage.src = `../images/sucrose.png`;
+  characterImage.className = "sucrose";
+};
+const showMona = () => {
+  // 모나, INTJ
+  const characterBox = document.createElement("div");
+  const characterImage = document.createElement("img");
+  characterImage.src = `../images/mona.png`;
+  characterImage.className = "mona";
+};
+const showFischl = () => {
+  // 피슬, INFP
+  const characterBox = document.createElement("div");
+  const characterImage = document.createElement("img");
+  characterImage.src = `../images/fischl.png`;
+  characterImage.className = "fischl";
+};
+const showXingqiu = () => {
+  // 행추, INFJ
+  const characterBox = document.createElement("div");
+  const characterImage = document.createElement("img");
+  characterImage.src = `../images/xingqiu.png`;
+  characterImage.className = "xingqiu";
+};
+const showXiao = () => {
+  // 소, ISTJ
+  const characterBox = document.createElement("div");
+  const characterImage = document.createElement("img");
+  characterImage.src = `../images/xiao.png`;
+  characterImage.className = "xiao";
+};
+const showJean = () => {
+  // 진, ISFJ
+  const characterBox = document.createElement("div");
+  const characterImage = document.createElement("img");
+  characterImage.src = `../images/jihn.png`;
+  characterImage.className = "jean";
+};
+const showChilde = () => {
+  // 타르탈리아, ESTP
+  const characterBox = document.createElement("div");
+  const characterImage = document.createElement("img");
+  characterImage.src = `../images/childe.png`;
+  characterImage.className = "childe";
+};
+const showClee = () => {
+  // 클레, ESFP
+  const characterBox = document.createElement("div");
+  const characterImage = document.createElement("img");
+  characterImage.src = `../images/clee.png`;
+  characterImage.className = "clee";
+};
+const showVenti = () => {
+  // 벤티, ENTP
+  const characterBox = document.createElement("div");
+  const characterImage = document.createElement("img");
+  characterImage.src = `../images/venti.png`;
+  characterImage.className = "venti";
+};
+const showKeqing = () => {
+  // 각청, ENTJ
+  const characterBox = document.createElement("div");
+  const characterImage = document.createElement("img");
+  characterImage.src = `../images/keqing.png`;
+  characterImage.className = "keqing";
+};
+const showHutao = () => {
+  // 호두, ENFP
+  const characterBox = document.createElement("div");
+  const characterImage = document.createElement("img");
+  characterImage.src = `../images/hutao.png`;
+  characterImage.className = "hutao";
+};
+const showBabara = () => {
+  // 바바라, ENFJ
+  const characterBox = document.createElement("div");
+  const characterImage = document.createElement("img");
+  characterImage.src = `../images/babara.png`;
+  characterImage.className = "babara";
+};
+const showNingguang = () => {
+  // 응광, ESTJ
+  const characterBox = document.createElement("div");
+  const characterImage = document.createElement("img");
+  characterImage.src = `../images/ningguang.png`;
+  characterImage.className = "ningguang";
+};
+const showAmber = () => {
+  // 엠버, ESFJ
+  const characterBox = document.createElement("div");
+  const characterImage = document.createElement("img");
+  characterImage.src = `../images/amber.png`;
+  characterImage.className = "amber";
+};
+
+let mbtiEI = {};
+let mbtiNS = {};
+let mbtiFT = {};
+let mbtiJP = {};
+
+let result = [];
 
 const createQuestion = (questionArr, answerOne, answerTwo) => {
   const questionBox = document.createElement("div");
@@ -237,12 +347,86 @@ const createQuestion = (questionArr, answerOne, answerTwo) => {
   };
 };
 
+const finishMBTI = () => {
+  logo.classList.remove("showing");
+  logo.classList.add("hide");
+  let resultMBTI = "";
+  (mbtiEI.E = personality.A),
+    (mbtiEI.I = personality.B),
+    (mbtiNS.S = personality.C),
+    (mbtiNS.N = personality.D),
+    (mbtiFT.T = personality.E),
+    (mbtiFT.F = personality.F),
+    (mbtiJP.J = personality.G),
+    (mbtiJP.P = personality.H);
+
+  if (mbtiEI.E > mbtiEI.I) {
+    result.push("E");
+  } else if (mbtiEI.E < mbtiEI.I) {
+    result.push("I");
+  }
+
+  if (mbtiNS.N > mbtiNS.S) {
+    result.push("N");
+  } else if (mbtiNS.N < mbtiNS.S) {
+    result.push("S");
+  }
+
+  if (mbtiFT.F > mbtiFT.T) {
+    result.push("F");
+  } else if (mbtiFT.F < mbtiFT.T) {
+    result.push("T");
+  }
+
+  if (mbtiJP.J > mbtiJP.P) {
+    result.push("J");
+  } else if (mbtiJP.J < mbtiJP.P) {
+    result.push("P");
+  }
+
+  resultMBTI = result.join("");
+};
+
 const handleFinishB = () => {
   personality.B++;
+  const finishBox = document.createElement("div");
+  finishBox.className = "finishBox";
+  const finishMent = document.createElement("span");
+  finishMent.className = "finishMent";
+  finishMent.innerText = "자! 이제 끝났어! 힘들었지? 결과를 확인해봐!";
+  const finishBtn = document.createElement("button");
+  finishBtn.className = "finishBtn";
+  finishBtn.innerText = "결과 보기!";
+
+  textBox.prepend(finishBox);
+  finishBox.prepend(finishBtn);
+  finishBox.prepend(finishMent);
+
+  finishBtn.addEventListener("click", () => {
+    textBox.removeChild(finishBox);
+    finishMBTI();
+  });
 };
 
 const handleFinishA = () => {
   personality.A++;
+  const finishBox = document.createElement("div");
+  finishBox.className = "finishBox";
+  const finishMent = document.createElement("span");
+  finishMent.className = "finishMent";
+  finishMent.innerText = "힘들었지? 결과를 확인해봐!";
+  const finishBtn = document.createElement("button");
+  finishBtn.className = "finishBtn";
+  finishBtn.innerText = "결과 보기!";
+
+  textBox.prepend(finishBox);
+  finishBox.prepend(finishBtn);
+  finishBox.prepend(finishMent);
+
+  finishBtn.addEventListener("click", () => {
+    textBox.removeChild(finishBox);
+    finishMBTI();
+  });
 };
 
 const handleQuestion60G = () => {
@@ -1985,7 +2169,7 @@ const handleQuestion17A = () => {
   });
 };
 
-const handleQuesetion17B = () => {
+const handleQuestion17B = () => {
   personality.B++;
   const createQuse = createQuestion(
     questionArray[16],
@@ -2619,6 +2803,8 @@ const handleQuestion2H = () => {
 
 const handleQuestionStart = (e) => {
   textBox.removeChild(startTextBox);
+  logo.classList.remove("hide");
+  logo.classList.add("showing");
   const createQuse = createQuestion(
     // 첫번째 질문
     questionArray[0],
