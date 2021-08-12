@@ -25,6 +25,7 @@ body {
   background-image: url("../images/mond.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
 .background_mond {

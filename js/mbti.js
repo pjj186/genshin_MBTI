@@ -2,6 +2,7 @@ const startBtn = document.querySelector(".btn__start");
 const textBox = document.querySelector(".textbox"); // 텍스트박스, 무조건 부모
 const startTextBox = document.querySelector(".textbox__start");
 const logo = document.querySelector(".logo");
+const paymon = document.querySelector(".paymon");
 
 const questionArray = [
   "Q1. 너는 하루정도 여행을 다녀오고 싶을때 어떻게 하는편이야?",
@@ -205,115 +206,230 @@ let personality = {
 
 const showLumine = () => {
   // 여행자, ISTP
+  document.body.style.backgroundImage = "url('./images/lumine_background.png')";
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "cover";
   const characterBox = document.createElement("div");
+  const characterAvater = document.createElement("img");
+  characterAvater.src = `./images/lumine_avatar.png`;
+  characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
-  characterImage.src = `../images/lumine.png`;
+  characterImage.src = `./images/lumine.png`;
   characterImage.className = "lumine";
+  textBox.prepend(characterAvater);
 };
 const showRazor = () => {
   // 레이저, ISFP
+  document.body.style.backgroundImage = "url('./images/razor_background.png')";
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "cover";
   const characterBox = document.createElement("div");
+  const characterAvater = document.createElement("img");
+  characterAvater.src = `./images/razor_avatar.png`;
+  characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
-  characterImage.src = `../images/razor.png`;
+  characterImage.src = `./images/razor.png`;
   characterImage.className = "razor";
+  textBox.prepend(characterAvater);
 };
 const showSucrose = () => {
   // 설탕, INTP
+  document.body.style.backgroundImage =
+    "url('./images/sucrose_background.png')";
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "cover";
   const characterBox = document.createElement("div");
+  const characterAvater = document.createElement("img");
+  characterAvater.src = `./images/sucrose_avatar.png`;
+  characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
-  characterImage.src = `../images/sucrose.png`;
+  characterImage.src = `./images/sucrose.png`;
   characterImage.className = "sucrose";
+  textBox.prepend(characterAvater);
 };
 const showMona = () => {
   // 모나, INTJ
+  document.body.style.backgroundImage = "url('./images/mona_background.png')";
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "cover";
   const characterBox = document.createElement("div");
+  const characterAvater = document.createElement("img");
+  characterAvater.src = `./images/mona_avatar.png`;
+  characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
-  characterImage.src = `../images/mona.png`;
+  characterImage.src = `./images/mona.png`;
   characterImage.className = "mona";
+  textBox.prepend(characterAvater);
 };
 const showFischl = () => {
   // 피슬, INFP
+  document.body.style.backgroundImage = "url('./images/fischl_background.png')";
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "cover";
   const characterBox = document.createElement("div");
+  const characterAvater = document.createElement("img");
+  characterAvater.src = `./images/fischl_avatar.png`;
+  characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
-  characterImage.src = `../images/fischl.png`;
+  characterImage.src = `./images/fischl.png`;
   characterImage.className = "fischl";
+  textBox.prepend(characterAvater);
 };
 const showXingqiu = () => {
   // 행추, INFJ
+  document.body.style.backgroundImage =
+    "url('./images/xingqiu_background.png')";
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "cover";
   const characterBox = document.createElement("div");
+  const characterAvater = document.createElement("img");
+  characterAvater.src = `./images/xingqiu_avatar.png`;
+  characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
-  characterImage.src = `../images/xingqiu.png`;
+  characterImage.src = `./images/xingqiu.png`;
   characterImage.className = "xingqiu";
+  textBox.prepend(characterAvater);
 };
 const showXiao = () => {
   // 소, ISTJ
+  document.body.style.backgroundImage = "url('./images/xiao_background.png')";
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "cover";
   const characterBox = document.createElement("div");
+  const characterAvater = document.createElement("img");
+  characterAvater.src = `./images/xiao_avatar.png`;
+  characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
-  characterImage.src = `../images/xiao.png`;
+  characterImage.src = `./images/xiao.png`;
   characterImage.className = "xiao";
+  textBox.prepend(characterAvater);
 };
 const showJean = () => {
   // 진, ISFJ
+  document.body.style.backgroundImage = "url('./images/jean_background.png')";
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "cover";
   const characterBox = document.createElement("div");
+  const characterAvater = document.createElement("img");
+  characterAvater.src = `./images/jean_avatar.png`;
+  characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
-  characterImage.src = `../images/jihn.png`;
+  characterImage.src = `./images/jihn.png`;
   characterImage.className = "jean";
+  textBox.prepend(characterAvater);
 };
 const showChilde = () => {
   // 타르탈리아, ESTP
+  document.body.style.backgroundImage = "url('./images/childe_background.png')";
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "cover";
   const characterBox = document.createElement("div");
+  const characterAvater = document.createElement("img");
+  characterAvater.src = `./images/childe_avatar.png`;
+  characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
-  characterImage.src = `../images/childe.png`;
+  characterImage.src = `./images/childe.png`;
   characterImage.className = "childe";
+  textBox.prepend(characterAvater);
 };
 const showClee = () => {
   // 클레, ESFP
+  document.body.style.backgroundImage = "url('./images/clee_background.png')";
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "cover";
   const characterBox = document.createElement("div");
+  const characterAvater = document.createElement("img");
+  characterAvater.src = `./images/clee_avatar.png`;
+  characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
-  characterImage.src = `../images/clee.png`;
+  characterImage.src = `./images/clee.png`;
   characterImage.className = "clee";
+  textBox.prepend(characterAvater);
 };
 const showVenti = () => {
   // 벤티, ENTP
+  document.body.style.backgroundImage = "url('./images/venti_background.png')";
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "cover";
   const characterBox = document.createElement("div");
+  const characterAvater = document.createElement("img");
+  characterAvater.src = `./images/venti_avatar.png`;
+  characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
-  characterImage.src = `../images/venti.png`;
+  characterImage.src = `./images/venti.png`;
   characterImage.className = "venti";
+  textBox.prepend(characterAvater);
 };
 const showKeqing = () => {
   // 각청, ENTJ
+  document.body.style.backgroundImage = "url('./images/keqing_background.png')";
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "cover";
   const characterBox = document.createElement("div");
+  const characterAvater = document.createElement("img");
+  characterAvater.src = `./images/keqing_avatar.png`;
+  characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
-  characterImage.src = `../images/keqing.png`;
+  characterImage.src = `./images/keqing.png`;
   characterImage.className = "keqing";
+  textBox.prepend(characterAvater);
 };
 const showHutao = () => {
   // 호두, ENFP
+  document.body.style.backgroundImage = "url('./images/hutao_background.png')";
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "cover";
   const characterBox = document.createElement("div");
+  const characterAvater = document.createElement("img");
+  characterAvater.src = `./images/hutao_avatar.png`;
+  characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
-  characterImage.src = `../images/hutao.png`;
+  characterImage.src = `./images/hutao.png`;
   characterImage.className = "hutao";
+  textBox.prepend(characterAvater);
 };
 const showBabara = () => {
   // 바바라, ENFJ
+  document.body.style.backgroundImage = "url('./images/babara_background.png')";
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "cover";
   const characterBox = document.createElement("div");
+  const characterAvater = document.createElement("img");
+  characterAvater.src = `./images/babara_avatar.png`;
+  characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
-  characterImage.src = `../images/babara.png`;
+  characterImage.src = `./images/babara.png`;
   characterImage.className = "babara";
+  textBox.prepend(characterAvater);
 };
 const showNingguang = () => {
   // 응광, ESTJ
+  document.body.style.backgroundImage =
+    "url('./images/ningguang_background.png')";
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "cover";
   const characterBox = document.createElement("div");
+  const characterAvater = document.createElement("img");
+  characterAvater.src = `./images/ningguang_avatar.png`;
+  characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
-  characterImage.src = `../images/ningguang.png`;
+  characterImage.src = `./images/ningguang.png`;
   characterImage.className = "ningguang";
+  textBox.prepend(characterAvater);
 };
 const showAmber = () => {
   // 엠버, ESFJ
+  document.body.style.backgroundImage = "url('./images/amber_background.png')";
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "cover";
   const characterBox = document.createElement("div");
+  const characterAvater = document.createElement("img");
+  characterAvater.src = `./images/amber_avatar.png`;
+  characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
-  characterImage.src = `../images/amber.png`;
+  characterImage.src = `./images/amber.png`;
   characterImage.className = "amber";
+  textBox.prepend(characterAvater);
 };
 
 let mbtiEI = {};
@@ -385,6 +501,39 @@ const finishMBTI = () => {
   }
 
   resultMBTI = result.join("");
+  if (resultMBTI === "ISTP") {
+    showLumine();
+  } else if (resultMBTI === "ISFP") {
+    showRazor();
+  } else if (resultMBTI === "INTP") {
+    showSucrose();
+  } else if (resultMBTI === "INTJ") {
+    showMona();
+  } else if (resultMBTI === "INFP") {
+    showFischl();
+  } else if (resultMBTI === "INFJ") {
+    showXingqiu();
+  } else if (resultMBTI === "ISTJ") {
+    showXiao();
+  } else if (resultMBTI === "ISFJ") {
+    showJean();
+  } else if (resultMBTI === "ESTP") {
+    showChilde();
+  } else if (resultMBTI === "ESFP") {
+    showClee();
+  } else if (resultMBTI === "ENTP") {
+    showVenti();
+  } else if (resultMBTI === "ENTJ") {
+    showKeqing();
+  } else if (resultMBTI === "ENFP") {
+    showHutao();
+  } else if (resultMBTI === "ENFJ") {
+    showBabara();
+  } else if (resultMBTI === "ESTJ") {
+    showNingguang();
+  } else if (resultMBTI === "ESFJ") {
+    showAmber();
+  }
 };
 
 const handleFinishB = () => {
