@@ -1,6 +1,7 @@
 @import "./reset.css";
 @import "./character.css";
 @import "./textbox.css";
+@import "./question.css";
 
 @font-face {
   font-family: "sunflower_Medium";
@@ -30,4 +31,14 @@ body {
   width: 100%;
   height: 100%;
   z-index: -5;
+}
+
+footer {
+  font-family: "sunflower_Bold";
+  font-size: 15px;
+  position: absolute;
+  left: 660px;
+  bottom: 20px;
+  z-index: 3;
+  color: black;
 }
