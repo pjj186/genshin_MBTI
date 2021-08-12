@@ -212,9 +212,16 @@ const showLumine = () => {
   paymon.classList = "hide";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
+  const characterName = document.createElement("span");
+  characterName.innerText = "루미네(ISTP)";
+  characterName.className = "characterName";
   const characterMent = document.createElement("span");
   characterMent.innerText = "「여행자」";
   characterMent.className = "characterMent";
+  const characterMBTI = document.createElement("span");
+  characterMBTI.innerText =
+    "너의 성격유형은 ISTP! 과묵하고 분석적이며, 적응력이 강한성격이래! 내 가장 친한 친구 여행자랑 똑 닮았구나?";
+  characterMBTI.className = "characterMBTI";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/lumine_avatar.png`;
   characterAvater.className = "avatar";
@@ -224,6 +231,8 @@ const showLumine = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(characterMBTI);
+  characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
 };
 const showRazor = () => {
@@ -234,9 +243,16 @@ const showRazor = () => {
   paymon.classList = "hide";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
+  const characterName = document.createElement("span");
+  characterName.innerText = "레이저(ISFP)";
+  characterName.className = "characterName";
   const characterMent = document.createElement("span");
   characterMent.innerText = "「나의「루피카」인 늑대. 그들은 내 가족이야.」";
   characterMent.className = "characterMent";
+  const characterMBTI = document.createElement("span");
+  characterMBTI.innerText =
+    "너의 성격유형은 ISFP! 온화하고 겸손함! 삶의 여유를 만끽하는 성격! 레이저가 생각나네~";
+  characterMBTI.className = "characterMBTI";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/razor_avatar.png`;
   characterAvater.className = "avatar";
@@ -246,6 +262,8 @@ const showRazor = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(characterMBTI);
+  characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
 };
 const showSucrose = () => {
@@ -257,10 +275,17 @@ const showSucrose = () => {
   paymon.classList = "hide";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
+  const characterName = document.createElement("span");
+  characterName.innerText = "설탕(INTP)";
+  characterName.className = "characterName";
   const characterMent = document.createElement("span");
   characterMent.innerText =
     "「이 꽃은 아마...3식 서리꽃 17호 확대버전이었던 것 같아.」";
   characterMent.className = "characterMent";
+  const characterMBTI = document.createElement("span");
+  characterMBTI.innerText =
+    "너의 성격유형은 INTP! 온화하고 겸손함! 지적 호기심이 높으며, 잠재력과 가능성을 중요시하는 성격이래! 널 보니까 설탕이 생각나!";
+  characterMBTI.className = "characterMBTI";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/sucrose_avatar.png`;
   characterAvater.className = "avatar";
@@ -270,6 +295,8 @@ const showSucrose = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(characterMBTI);
+  characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
 };
 const showMona = () => {
@@ -280,10 +307,17 @@ const showMona = () => {
   paymon.classList = "hide";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
+  const characterName = document.createElement("span");
+  characterName.innerText = "모나(INTJ)";
+  characterName.className = "characterName";
   const characterMent = document.createElement("span");
   characterMent.innerText =
     "「바꿀 수 없고, 거스를 수 없고, 받아들일 수밖에 없어서 운명인 거지.」";
   characterMent.className = "characterMent";
+  const characterMBTI = document.createElement("span");
+  characterMBTI.innerText =
+    "너의 성격유형은 INTJ! 의지가 강하고, 독립적이고, 분석력이 뛰어난 성격! 모나가 생각나! 너.. 굶고 다니는건 아니지?!";
+  characterMBTI.className = "characterMBTI";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/mona_avatar.png`;
   characterAvater.className = "avatar";
@@ -293,6 +327,8 @@ const showMona = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(characterMBTI);
+  characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
 };
 const showFischl = () => {
@@ -303,10 +339,17 @@ const showFischl = () => {
   paymon.classList = "hide";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
+  const characterName = document.createElement("span");
+  characterName.innerText = "피슬(INFP)";
+  characterName.className = "characterName";
   const characterMent = document.createElement("span");
   characterMent.innerText =
     "「너와 난 모두 이세계의 여행자, 여기서 만난 건 분명 운명의 이끌림일 거야.」";
   characterMent.className = "characterMent";
+  const characterMBTI = document.createElement("span");
+  characterMBTI.innerText =
+    "너의 성격유형은 INFP! 성실하고 이해심 많으며, 개방적인 성격이야. 잘 표현하지 않으나, 내적 신념이 강한 성격! 피슬.. 잘 지내고 있겠지?";
+  characterMBTI.className = "characterMBTI";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/fischl_avatar.png`;
   characterAvater.className = "avatar";
@@ -316,6 +359,8 @@ const showFischl = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(characterMBTI);
+  characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
 };
 const showXingqiu = () => {
@@ -327,10 +372,17 @@ const showXingqiu = () => {
   paymon.classList = "hide";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
+  const characterName = document.createElement("span");
+  characterName.innerText = "행추(INFJ)";
+  characterName.className = "characterName";
   const characterMent = document.createElement("span");
   characterMent.innerText =
     "「번뇌에서 벗어나 조용한 곳에서 심신을 수양하면 얼마나 좋을까.」";
   characterMent.className = "characterMent";
+  const characterMBTI = document.createElement("span");
+  characterMBTI.innerText =
+    "너의 성격유형은 INFJ! 높은 통찰력으로 사람들에게 영감을 주는 타입이야. 또, 공동체의 이익을 중요시하게 생각해. 행추가 생각나네!";
+  characterMBTI.className = "characterMBTI";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/xingqiu_avatar.png`;
   characterAvater.className = "avatar";
@@ -340,6 +392,8 @@ const showXingqiu = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(characterMBTI);
+  characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
 };
 const showXiao = () => {
@@ -350,10 +404,17 @@ const showXiao = () => {
   paymon.classList = "hide";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
+  const characterName = document.createElement("span");
+  characterName.innerText = "소(ISTJ)";
+  characterName.className = "characterName";
   const characterMent = document.createElement("span");
   characterMent.innerText =
     "「널 지키는 호법이 되어줄게. 하지만 내게 가까이 오지 마. 날 방해하지도 마. 안 그럼 후회하게 될 거야.」";
   characterMent.className = "characterMent";
+  const characterMBTI = document.createElement("span");
+  characterMBTI.innerText =
+    "너의 성격유형은 ISTJ! 책임감이 강하며, 현실적인 타입! 매사에 철저하고 보수적이다! 소랑 닮았어!";
+  characterMBTI.className = "characterMBTI";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/xiao_avatar.png`;
   characterAvater.className = "avatar";
@@ -363,6 +424,8 @@ const showXiao = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(characterMBTI);
+  characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
 };
 const showJean = () => {
@@ -373,9 +436,16 @@ const showJean = () => {
   paymon.classList = "hide";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
+  const characterName = document.createElement("span");
+  characterName.innerText = "진(ISFJ)";
+  characterName.className = "characterName";
   const characterMent = document.createElement("span");
   characterMent.innerText = "「바람의 신이여, 우릴 인도하소서.」";
   characterMent.className = "characterMent";
+  const characterMBTI = document.createElement("span");
+  characterMBTI.innerText =
+    "너의 성격유형은 ISFJ! 차분하고 헌신적이며, 인내심이 강한 타입! 타인의 감정변화에 주의를 기울인다! 진 단장같은 성격이구나!";
+  characterMBTI.className = "characterMBTI";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/jean_avatar.png`;
   characterAvater.className = "avatar";
@@ -385,6 +455,8 @@ const showJean = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(characterMBTI);
+  characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
 };
 const showChilde = () => {
@@ -395,9 +467,16 @@ const showChilde = () => {
   paymon.classList = "hide";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
+  const characterName = document.createElement("span");
+  characterName.innerText = "타르탈리아(ESTP)";
+  characterName.className = "characterName";
   const characterMent = document.createElement("span");
   characterMent.innerText = "「날 어떻게 조종할 거지? 정말 기대되는데!」";
   characterMent.className = "characterMent";
+  const characterMBTI = document.createElement("span");
+  characterMBTI.innerText =
+    "너의 성격유형은 ESTP! 느긋하고, 관용적이며, 타협을 잘한다. 현실적 문제 해결에 능숙한 타입! 너도 혹시 장난감 판매원이야?";
+  characterMBTI.className = "characterMBTI";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/childe_avatar.png`;
   characterAvater.className = "avatar";
@@ -407,6 +486,8 @@ const showChilde = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(characterMBTI);
+  characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
 };
 const showClee = () => {
@@ -417,9 +498,16 @@ const showClee = () => {
   paymon.classList = "hide";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
+  const characterName = document.createElement("span");
+  characterName.innerText = "클레(ESFP)";
+  characterName.className = "characterName";
   const characterMent = document.createElement("span");
   characterMent.innerText = "「클레는 나가 놀고 싶어~ 함께 밖에 나가 놀아줘~」";
   characterMent.className = "characterMent";
+  const characterMBTI = document.createElement("span");
+  characterMBTI.innerText =
+    "너의 성격유형은 ESFP! 호기심이 많으며, 개방적인 타입! 구체적인 사실을 중시한다! 너.. 혹시 폭발물에도 호기심이 있는건 아니지?!";
+  characterMBTI.className = "characterMBTI";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/clee_avatar.png`;
   characterAvater.className = "avatar";
@@ -429,6 +517,8 @@ const showClee = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(characterMBTI);
+  characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
 };
 const showVenti = () => {
@@ -439,10 +529,17 @@ const showVenti = () => {
   paymon.classList = "hide";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
+  const characterName = document.createElement("span");
+  characterName.innerText = "벤티(ENTP)";
+  characterName.className = "characterName";
   const characterMent = document.createElement("span");
   characterMent.innerText =
     "「마침 잘 왔어, 여행자, 네 소원이 뭔지 들어보고 싶어.」";
   characterMent.className = "characterMent";
+  const characterMBTI = document.createElement("span");
+  characterMBTI.innerText =
+    "너의 성격유형은 ENTP! 박학다식하고, 독창적이다! 끊임없이 새로운 시도를 하는타입! 벤티가 생각나!";
+  characterMBTI.className = "characterMBTI";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/venti_avatar.png`;
   characterAvater.className = "avatar";
@@ -452,6 +549,8 @@ const showVenti = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(characterMBTI);
+  characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
 };
 const showKeqing = () => {
@@ -462,10 +561,17 @@ const showKeqing = () => {
   paymon.classList = "hide";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
+  const characterName = document.createElement("span");
+  characterName.innerText = "각청(ENTJ)";
+  characterName.className = "characterName";
   const characterMent = document.createElement("span");
   characterMent.innerText =
     "「제군? 흥, 그가 밑바닥 사정을 제대로 알기나 하겠어? 웃기는 소리.」";
   characterMent.className = "characterMent";
+  const characterMBTI = document.createElement("span");
+  characterMBTI.innerText =
+    "너의 성격유형은 ENTJ! 철저한 준비를 하며, 활동적이다! 통솔력이 있으며, 단호하다! 리월 칠성의 옥형성이랑 비슷한 성격이구나!";
+  characterMBTI.className = "characterMBTI";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/keqing_avatar.png`;
   characterAvater.className = "avatar";
@@ -475,6 +581,8 @@ const showKeqing = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(characterMBTI);
+  characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
 };
 const showHutao = () => {
@@ -485,9 +593,16 @@ const showHutao = () => {
   paymon.classList = "hide";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
+  const characterName = document.createElement("span");
+  characterName.innerText = "호두(ENFP)";
+  characterName.className = "characterName";
   const characterMent = document.createElement("span");
   characterMent.innerText = "「해가 뜨면 볕을 쬐고, 달이 뜨면 달을 쬐고——!」";
   characterMent.className = "characterMent";
+  const characterMBTI = document.createElement("span");
+  characterMBTI.innerText =
+    "너의 성격유형은 ENFP! 상상력이 풍부하고, 순발력이 뛰어나다! 일상적인 활동에 지루함을 느낀다! 호두랑 비슷한 타입인가?!";
+  characterMBTI.className = "characterMBTI";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/hutao_avatar.png`;
   characterAvater.className = "avatar";
@@ -497,6 +612,8 @@ const showHutao = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(characterMBTI);
+  characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
 };
 const showBabara = () => {
@@ -507,9 +624,16 @@ const showBabara = () => {
   paymon.classList = "hide";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
+  const characterName = document.createElement("span");
+  characterName.innerText = "바바라(ENFJ)";
+  characterName.className = "characterName";
   const characterMent = document.createElement("span");
   characterMent.innerText = "「착실한 노력이야말로 가장 신기한 마법.」";
   characterMent.className = "characterMent";
+  const characterMBTI = document.createElement("span");
+  characterMBTI.innerText =
+    "너의 성격유형은 ENFJ! 사교적이고, 타인의 의견을 존중한다! 비판을 받으면 예민하게 반응한다! 바바라랑 비슷한 성격이구나!";
+  characterMBTI.className = "characterMBTI";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/babara_avatar.png`;
   characterAvater.className = "avatar";
@@ -519,6 +643,8 @@ const showBabara = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(characterMBTI);
+  characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
 };
 const showNingguang = () => {
@@ -530,9 +656,16 @@ const showNingguang = () => {
   paymon.classList = "hide";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
+  const characterName = document.createElement("span");
+  characterName.innerText = "응광(ESTJ)";
+  characterName.className = "characterName";
   const characterMent = document.createElement("span");
   characterMent.innerText = "「더 많이 벌면... 더 좋은 거 아냐?」";
   characterMent.className = "characterMent";
+  const characterMBTI = document.createElement("span");
+  characterMBTI.innerText =
+    "너의 성격유형은 ESTJ! 체계적으로 일하고, 규칙을 준수한다. 사실적 목표 설정에 능하다! 리월 칠성의 천권.. 응광이랑 비슷한 성격이야!";
+  characterMBTI.className = "characterMBTI";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/ningguang_avatar.png`;
   characterAvater.className = "avatar";
@@ -542,6 +675,8 @@ const showNingguang = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(characterMBTI);
+  characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
 };
 const showAmber = () => {
@@ -552,9 +687,16 @@ const showAmber = () => {
   paymon.classList = "hide";
   const characterBox = document.createElement("div");
   characterBox.className = "characterBox";
+  const characterName = document.createElement("span");
+  characterName.innerText = "엠버(ESFJ)";
+  characterName.className = "characterName";
   const characterMent = document.createElement("span");
   characterMent.innerText = "「정찰 기사 엠버, 준비 완료!」";
   characterMent.className = "characterMent";
+  const characterMBTI = document.createElement("span");
+  characterMBTI.innerText =
+    "너의 성격유형은 ESFJ! 사람에 대한 관심이 많으며, 친절하다. 동정심이 많다! 내 친구 엠버랑 판박이네~";
+  characterMBTI.className = "characterMBTI";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/amber_avatar.png`;
   characterAvater.className = "avatar";
@@ -564,6 +706,8 @@ const showAmber = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
+  characterBox.prepend(characterMBTI);
+  characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
 };
 
