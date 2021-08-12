@@ -156,7 +156,7 @@ const answer2Array = [
   "현실감각이 있는 사람!",
   "나를 깊이 알고 난 후에야 아는 편이야.",
   "응! 나는 시간의 압박을 피하기 위해 대체로 미리 계획을 짜는 편이야.",
-  "아니.. 난 내 감정과 느낌을 표현하기보다는 자신 안에 묻어 두는 편이야..",
+  "아니! 난 내 감정과 느낌을 표현하기보다는 자신 안에 묻어 두는 편이야.",
   "무계획",
   "아이디어",
   "마음이 따뜻한",
@@ -209,28 +209,44 @@ const showLumine = () => {
   document.body.style.backgroundImage = "url('./images/lumine_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
+  paymon.classList = "hide";
   const characterBox = document.createElement("div");
+  characterBox.className = "characterBox";
+  const characterMent = document.createElement("span");
+  characterMent.innerText = "「여행자」";
+  characterMent.className = "characterMent";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/lumine_avatar.png`;
   characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
   characterImage.src = `./images/lumine.png`;
   characterImage.className = "lumine";
+  textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
+  textBox.prepend(characterBox);
+  characterBox.prepend(characterMent);
 };
 const showRazor = () => {
   // 레이저, ISFP
   document.body.style.backgroundImage = "url('./images/razor_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
+  paymon.classList = "hide";
   const characterBox = document.createElement("div");
+  characterBox.className = "characterBox";
+  const characterMent = document.createElement("span");
+  characterMent.innerText = "「나의「루피카」인 늑대. 그들은 내 가족이야.」";
+  characterMent.className = "characterMent";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/razor_avatar.png`;
   characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
   characterImage.src = `./images/razor.png`;
   characterImage.className = "razor";
+  textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
+  textBox.prepend(characterBox);
+  characterBox.prepend(characterMent);
 };
 const showSucrose = () => {
   // 설탕, INTP
@@ -238,42 +254,69 @@ const showSucrose = () => {
     "url('./images/sucrose_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
+  paymon.classList = "hide";
   const characterBox = document.createElement("div");
+  characterBox.className = "characterBox";
+  const characterMent = document.createElement("span");
+  characterMent.innerText =
+    "「이 꽃은 아마...3식 서리꽃 17호 확대버전이었던 것 같아.」";
+  characterMent.className = "characterMent";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/sucrose_avatar.png`;
   characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
   characterImage.src = `./images/sucrose.png`;
   characterImage.className = "sucrose";
+  textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
+  textBox.prepend(characterBox);
+  characterBox.prepend(characterMent);
 };
 const showMona = () => {
   // 모나, INTJ
   document.body.style.backgroundImage = "url('./images/mona_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
+  paymon.classList = "hide";
   const characterBox = document.createElement("div");
+  characterBox.className = "characterBox";
+  const characterMent = document.createElement("span");
+  characterMent.innerText =
+    "「바꿀 수 없고, 거스를 수 없고, 받아들일 수밖에 없어서 운명인 거지.」";
+  characterMent.className = "characterMent";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/mona_avatar.png`;
   characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
   characterImage.src = `./images/mona.png`;
   characterImage.className = "mona";
+  textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
+  textBox.prepend(characterBox);
+  characterBox.prepend(characterMent);
 };
 const showFischl = () => {
   // 피슬, INFP
   document.body.style.backgroundImage = "url('./images/fischl_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
+  paymon.classList = "hide";
   const characterBox = document.createElement("div");
+  characterBox.className = "characterBox";
+  const characterMent = document.createElement("span");
+  characterMent.innerText =
+    "「너와 난 모두 이세계의 여행자, 여기서 만난 건 분명 운명의 이끌림일 거야.」";
+  characterMent.className = "characterMent";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/fischl_avatar.png`;
   characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
   characterImage.src = `./images/fischl.png`;
   characterImage.className = "fischl";
+  textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
+  textBox.prepend(characterBox);
+  characterBox.prepend(characterMent);
 };
 const showXingqiu = () => {
   // 행추, INFJ
@@ -281,126 +324,202 @@ const showXingqiu = () => {
     "url('./images/xingqiu_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
+  paymon.classList = "hide";
   const characterBox = document.createElement("div");
+  characterBox.className = "characterBox";
+  const characterMent = document.createElement("span");
+  characterMent.innerText =
+    "「번뇌에서 벗어나 조용한 곳에서 심신을 수양하면 얼마나 좋을까.」";
+  characterMent.className = "characterMent";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/xingqiu_avatar.png`;
   characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
   characterImage.src = `./images/xingqiu.png`;
   characterImage.className = "xingqiu";
+  textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
+  textBox.prepend(characterBox);
+  characterBox.prepend(characterMent);
 };
 const showXiao = () => {
   // 소, ISTJ
   document.body.style.backgroundImage = "url('./images/xiao_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
+  paymon.classList = "hide";
   const characterBox = document.createElement("div");
+  characterBox.className = "characterBox";
+  const characterMent = document.createElement("span");
+  characterMent.innerText =
+    "「널 지키는 호법이 되어줄게. 하지만 내게 가까이 오지 마. 날 방해하지도 마. 안 그럼 후회하게 될 거야.」";
+  characterMent.className = "characterMent";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/xiao_avatar.png`;
   characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
   characterImage.src = `./images/xiao.png`;
   characterImage.className = "xiao";
+  textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
+  textBox.prepend(characterBox);
+  characterBox.prepend(characterMent);
 };
 const showJean = () => {
   // 진, ISFJ
   document.body.style.backgroundImage = "url('./images/jean_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
+  paymon.classList = "hide";
   const characterBox = document.createElement("div");
+  characterBox.className = "characterBox";
+  const characterMent = document.createElement("span");
+  characterMent.innerText = "「바람의 신이여, 우릴 인도하소서.」";
+  characterMent.className = "characterMent";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/jean_avatar.png`;
   characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
   characterImage.src = `./images/jihn.png`;
   characterImage.className = "jean";
+  textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
+  textBox.prepend(characterBox);
+  characterBox.prepend(characterMent);
 };
 const showChilde = () => {
   // 타르탈리아, ESTP
   document.body.style.backgroundImage = "url('./images/childe_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
+  paymon.classList = "hide";
   const characterBox = document.createElement("div");
+  characterBox.className = "characterBox";
+  const characterMent = document.createElement("span");
+  characterMent.innerText = "「날 어떻게 조종할 거지? 정말 기대되는데!」";
+  characterMent.className = "characterMent";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/childe_avatar.png`;
   characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
   characterImage.src = `./images/childe.png`;
   characterImage.className = "childe";
+  textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
+  textBox.prepend(characterBox);
+  characterBox.prepend(characterMent);
 };
 const showClee = () => {
   // 클레, ESFP
   document.body.style.backgroundImage = "url('./images/clee_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
+  paymon.classList = "hide";
   const characterBox = document.createElement("div");
+  characterBox.className = "characterBox";
+  const characterMent = document.createElement("span");
+  characterMent.innerText = "「클레는 나가 놀고 싶어~ 함께 밖에 나가 놀아줘~」";
+  characterMent.className = "characterMent";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/clee_avatar.png`;
   characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
   characterImage.src = `./images/clee.png`;
   characterImage.className = "clee";
+  textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
+  textBox.prepend(characterBox);
+  characterBox.prepend(characterMent);
 };
 const showVenti = () => {
   // 벤티, ENTP
   document.body.style.backgroundImage = "url('./images/venti_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
+  paymon.classList = "hide";
   const characterBox = document.createElement("div");
+  characterBox.className = "characterBox";
+  const characterMent = document.createElement("span");
+  characterMent.innerText =
+    "「마침 잘 왔어, 여행자, 네 소원이 뭔지 들어보고 싶어.」";
+  characterMent.className = "characterMent";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/venti_avatar.png`;
   characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
   characterImage.src = `./images/venti.png`;
   characterImage.className = "venti";
+  textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
+  textBox.prepend(characterBox);
+  characterBox.prepend(characterMent);
 };
 const showKeqing = () => {
   // 각청, ENTJ
   document.body.style.backgroundImage = "url('./images/keqing_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
+  paymon.classList = "hide";
   const characterBox = document.createElement("div");
+  characterBox.className = "characterBox";
+  const characterMent = document.createElement("span");
+  characterMent.innerText =
+    "「제군? 흥, 그가 밑바닥 사정을 제대로 알기나 하겠어? 웃기는 소리.」";
+  characterMent.className = "characterMent";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/keqing_avatar.png`;
   characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
   characterImage.src = `./images/keqing.png`;
   characterImage.className = "keqing";
+  textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
+  textBox.prepend(characterBox);
+  characterBox.prepend(characterMent);
 };
 const showHutao = () => {
   // 호두, ENFP
   document.body.style.backgroundImage = "url('./images/hutao_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
+  paymon.classList = "hide";
   const characterBox = document.createElement("div");
+  characterBox.className = "characterBox";
+  const characterMent = document.createElement("span");
+  characterMent.innerText = "「해가 뜨면 볕을 쬐고, 달이 뜨면 달을 쬐고——!」";
+  characterMent.className = "characterMent";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/hutao_avatar.png`;
   characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
   characterImage.src = `./images/hutao.png`;
   characterImage.className = "hutao";
+  textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
+  textBox.prepend(characterBox);
+  characterBox.prepend(characterMent);
 };
 const showBabara = () => {
   // 바바라, ENFJ
   document.body.style.backgroundImage = "url('./images/babara_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
+  paymon.classList = "hide";
   const characterBox = document.createElement("div");
+  characterBox.className = "characterBox";
+  const characterMent = document.createElement("span");
+  characterMent.innerText = "「착실한 노력이야말로 가장 신기한 마법.」";
+  characterMent.className = "characterMent";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/babara_avatar.png`;
   characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
   characterImage.src = `./images/babara.png`;
   characterImage.className = "babara";
+  textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
+  textBox.prepend(characterBox);
+  characterBox.prepend(characterMent);
 };
 const showNingguang = () => {
   // 응광, ESTJ
@@ -408,28 +527,44 @@ const showNingguang = () => {
     "url('./images/ningguang_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
+  paymon.classList = "hide";
   const characterBox = document.createElement("div");
+  characterBox.className = "characterBox";
+  const characterMent = document.createElement("span");
+  characterMent.innerText = "「더 많이 벌면... 더 좋은 거 아냐?」";
+  characterMent.className = "characterMent";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/ningguang_avatar.png`;
   characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
   characterImage.src = `./images/ningguang.png`;
   characterImage.className = "ningguang";
+  textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
+  textBox.prepend(characterBox);
+  characterBox.prepend(characterMent);
 };
 const showAmber = () => {
   // 엠버, ESFJ
   document.body.style.backgroundImage = "url('./images/amber_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
+  paymon.classList = "hide";
   const characterBox = document.createElement("div");
+  characterBox.className = "characterBox";
+  const characterMent = document.createElement("span");
+  characterMent.innerText = "「정찰 기사 엠버, 준비 완료!」";
+  characterMent.className = "characterMent";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/amber_avatar.png`;
   characterAvater.className = "avatar";
   const characterImage = document.createElement("img");
   characterImage.src = `./images/amber.png`;
   characterImage.className = "amber";
+  textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
+  textBox.prepend(characterBox);
+  characterBox.prepend(characterMent);
 };
 
 let mbtiEI = {};
