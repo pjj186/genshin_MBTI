@@ -301,7 +301,7 @@ const showSucrose = () => {
   characterMent.className = "characterMent";
   const characterMBTI = document.createElement("span");
   characterMBTI.innerText =
-    "너의 성격유형은 INTP! 온화하고 겸손함! 지적 호기심이 높으며, 잠재력과 가능성을 중요시하는 성격이래! 널 보니까 설탕이 생각나!";
+    "너의 성격유형은 INTP! 지적 호기심이 높으며, 잠재력과 가능성을 중요시하는 성격이래! 널 보니까 설탕이 생각나!";
   characterMBTI.className = "characterMBTI";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/sucrose_avatar.png`;
