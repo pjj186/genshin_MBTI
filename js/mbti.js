@@ -237,172 +237,1445 @@ const createQuestion = (questionArr, answerOne, answerTwo) => {
   };
 };
 
-const handleQuestion4F = () => {
-  personality.F++;
-};
-
-const handleQuestion4E = () => {
-  personality.E++;
-};
-
-const handleQuestion3A = () => {
-  personality.A++;
-  const questionBox = document.createElement("div");
-  questionBox.className = "questionBox";
-  const question = document.createElement("div");
-  question.innerText = questionArray[3];
-  question.className = "question";
-  const answer1 = document.createElement("button");
-  answer1.innerText = answer1Array[3]; // F
-  answer1.className = "btn__question";
-  const answer2 = document.createElement("button");
-  answer2.innerText = answer2Array[3]; // E
-  answer2.className = "btn__question";
-
-  textBox.prepend(questionBox);
-  questionBox.prepend(answer2);
-  questionBox.prepend(answer1);
-  questionBox.prepend(question);
-
-  answer1.addEventListener("click", () => {
-    textBox.removeChild(questionBox);
-    handleQuestion4F();
-  });
-  answer2.addEventListener("click", () => {
-    textBox.removeChild(questionBox);
-    handleQuestion4E();
-  });
-};
-
-const handleQuestion3B = () => {
+const handleQuestion37B = () => {
   personality.B++;
-  const questionBox = document.createElement("div");
-  questionBox.className = "questionBox";
-  const question = document.createElement("div");
-  question.innerText = questionArray[3];
-  question.className = "question";
-  const answer1 = document.createElement("button");
-  answer1.innerText = answer1Array[3]; // F
-  answer1.className = "btn__question";
-  const answer2 = document.createElement("button");
-  answer2.innerText = answer2Array[3]; // E
-  answer2.className = "btn__question";
+};
 
-  textBox.prepend(questionBox);
-  questionBox.prepend(answer2);
-  questionBox.prepend(answer1);
-  questionBox.prepend(question);
+const handleQuestion37A = () => {
+  personality.A++;
+};
 
+const handleQuestion36C = () => {
+  personality.C++;
+  const createQuse = createQuestion(
+    questionArray[35],
+    answer1Array[35],
+    answer2Array[35]
+  );
+  const answer1 = createQuse.answer1;
+  const answer2 = createQuse.answer2;
+  const questionBox = createQuse.questionBox;
   answer1.addEventListener("click", () => {
     textBox.removeChild(questionBox);
-    handleQuestion4F();
+    handleQuestion37B();
   });
   answer2.addEventListener("click", () => {
     textBox.removeChild(questionBox);
-    handleQuestion4E();
+    handleQuestion37A();
   });
 };
 
-const handleQuestion2C = () => {
+const handleQuestion36D = () => {
+  personality.D++;
+  const createQuse = createQuestion(
+    questionArray[35],
+    answer1Array[35],
+    answer2Array[35]
+  );
+  const answer1 = createQuse.answer1;
+  const answer2 = createQuse.answer2;
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion37B();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion37A();
+  });
+};
+
+const handleQuestion35G = () => {
+  personality.G++;
+  const createQuse = createQuestion(
+    questionArray[34],
+    answer1Array[34],
+    answer2Array[34]
+  );
+  const answer1 = createQuse.answer1;
+  const answer2 = createQuse.answer2;
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion36C();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion36D();
+  });
+};
+
+const handleQuestion35H = () => {
+  personality.H++;
+  const createQuse = createQuestion(
+    questionArray[34],
+    answer1Array[34],
+    answer2Array[34]
+  );
+  const answer1 = createQuse.answer1;
+  const answer2 = createQuse.answer2;
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion36C();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion36D();
+  });
+};
+
+const handleQuestion34F = () => {
+  personality.F++;
+  const createQuse = createQuestion(
+    questionArray[33],
+    answer1Array[33],
+    answer2Array[33]
+  );
+  const answer1 = createQuse.answer1;
+  const answer2 = createQuse.answer2;
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion35G();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion35H();
+  });
+};
+
+const handleQuestion34E = () => {
+  personality.E++;
+  const createQuse = createQuestion(
+    questionArray[33],
+    answer1Array[33],
+    answer2Array[33]
+  );
+  const answer1 = createQuse.answer1;
+  const answer2 = createQuse.answer2;
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion35G();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion35H();
+  });
+};
+
+const handleQuestion33C = () => {
+  personality.C++;
+  const createQuse = createQuestion(
+    questionArray[32],
+    answer1Array[32],
+    answer2Array[32]
+  );
+  const answer1 = createQuse.answer1;
+  const answer2 = createQuse.answer2;
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion34F();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion34E();
+  });
+};
+
+const handleQuestion33D = () => {
+  personality.D++;
+  const createQuse = createQuestion(
+    questionArray[32],
+    answer1Array[32],
+    answer2Array[32]
+  );
+  const answer1 = createQuse.answer1;
+  const answer2 = createQuse.answer2;
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion34F();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion34E();
+  });
+};
+
+const handleQuestion32D = () => {
+  personality.D++;
+  const createQuse = createQuestion(
+    questionArray[31],
+    answer1Array[31],
+    answer2Array[31]
+  );
+  const answer1 = createQuse.answer1;
+  const answer2 = createQuse.answer2;
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion33C();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion33D();
+  });
+};
+
+const handleQuestion32C = () => {
+  personality.C++;
+  const createQuse = createQuestion(
+    questionArray[31],
+    answer1Array[31],
+    answer2Array[31]
+  );
+  const answer1 = createQuse.answer1;
+  const answer2 = createQuse.answer2;
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion33C();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion33D();
+  });
+};
+
+const handleQuestion31E = () => {
+  personality.E++;
+  const createQuse = createQuestion(
+    questionArray[30],
+    answer1Array[30],
+    answer2Array[30]
+  );
+  const answer1 = createQuse.answer1;
+  const answer2 = createQuse.answer2;
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion32D();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion32C();
+  });
+};
+
+const handleQuestion31F = () => {
+  personality.F++;
+  const createQuse = createQuestion(
+    questionArray[30],
+    answer1Array[30],
+    answer2Array[30]
+  );
+  const answer1 = createQuse.answer1;
+  const answer2 = createQuse.answer2;
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion32D();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion32C();
+  });
+};
+
+const handleQuestion30B = () => {
+  personality.B++;
+  const createQuse = createQuestion(
+    questionArray[29],
+    answer1Array[29],
+    answer2Array[29]
+  );
+  const answer1 = createQuse.answer1;
+  const answer2 = createQuse.answer2;
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion31E();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion31F();
+  });
+};
+
+const handleQuestion30A = () => {
+  personality.A++;
+  const createQuse = createQuestion(
+    questionArray[29],
+    answer1Array[29],
+    answer2Array[29]
+  );
+  const answer1 = createQuse.answer1;
+  const answer2 = createQuse.answer2;
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion31E();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion31F();
+  });
+};
+
+const handleQuestion29C = () => {
+  personality.C++;
+  const createQuse = createQuestion(
+    questionArray[28],
+    answer1Array[28],
+    answer2Array[28]
+  );
+  const answer1 = createQuse.answer1;
+  const answer2 = createQuse.answer2;
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion30B();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion30A();
+  });
+};
+
+const handleQuestion29D = () => {
+  personality.D++;
+  const createQuse = createQuestion(
+    questionArray[28],
+    answer1Array[28],
+    answer2Array[28]
+  );
+  const answer1 = createQuse.answer1;
+  const answer2 = createQuse.answer2;
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion30B();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion30A();
+  });
+};
+
+const handleQuestion28G = () => {
+  personality.G++;
+  const createQuse = createQuestion(
+    questionArray[27],
+    answer1Array[27],
+    answer2Array[27]
+  );
+  const answer1 = createQuse.answer1; // C
+  const answer2 = createQuse.answer2; // D
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion29C();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion29D();
+  });
+};
+
+const handleQuestion28H = () => {
+  personality.H++;
+  const createQuse = createQuestion(
+    questionArray[27],
+    answer1Array[27],
+    answer2Array[27]
+  );
+  const answer1 = createQuse.answer1; // C
+  const answer2 = createQuse.answer2; // D
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion29C();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion29D();
+  });
+};
+
+const handleQuestion27F = () => {
+  personality.F++;
+  const createQuse = createQuestion(
+    questionArray[26],
+    answer1Array[26],
+    answer2Array[26]
+  );
+  const answer1 = createQuse.answer1; // G
+  const answer2 = createQuse.answer2; // H
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion28G();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion28H();
+  });
+};
+
+const handleQuestion27E = () => {
+  personality.E++;
+  const createQuse = createQuestion(
+    questionArray[26],
+    answer1Array[26],
+    answer2Array[26]
+  );
+  const answer1 = createQuse.answer1; // G
+  const answer2 = createQuse.answer2; // H
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion28G();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion28H();
+  });
+};
+
+const handleQuestion26H = () => {
+  personality.H++;
+  const createQuse = createQuestion(
+    questionArray[25],
+    answer1Array[25],
+    answer2Array[25]
+  );
+  const answer1 = createQuse.answer1; // F
+  const answer2 = createQuse.answer2; // E
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion27F();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion27E();
+  });
+};
+
+const handleQuestion26G = () => {
+  personality.G++;
+  const createQuse = createQuestion(
+    questionArray[25],
+    answer1Array[25],
+    answer2Array[25]
+  );
+  const answer1 = createQuse.answer1; // F
+  const answer2 = createQuse.answer2; // E
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion27F();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion27E();
+  });
+};
+
+const handleQuestion25A = () => {
+  personality.A++;
+  const createQuse = createQuestion(
+    questionArray[24],
+    answer1Array[24],
+    answer2Array[24]
+  );
+  const answer1 = createQuse.answer1; // H
+  const answer2 = createQuse.answer2; // G
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion26H();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion26G();
+  });
+};
+
+const handleQuestion25B = () => {
+  personality.B++;
+  const createQuse = createQuestion(
+    questionArray[24],
+    answer1Array[24],
+    answer2Array[24]
+  );
+  const answer1 = createQuse.answer1; // H
+  const answer2 = createQuse.answer2; // G
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion26H();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion26G();
+  });
+};
+
+const handleQuestion24D = () => {
+  personality.D++;
+  const createQuse = createQuestion(
+    questionArray[23],
+    answer1Array[23],
+    answer2Array[23]
+  );
+  const answer1 = createQuse.answer1; // A
+  const answer2 = createQuse.answer2; // B
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion25A();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion25B();
+  });
+};
+
+const handleQuestion24C = () => {
+  personality.C++;
+  const createQuse = createQuestion(
+    questionArray[23],
+    answer1Array[23],
+    answer2Array[23]
+  );
+  const answer1 = createQuse.answer1; // A
+  const answer2 = createQuse.answer2; // B
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion25A();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion25B();
+  });
+};
+
+const handleQuestion23F = () => {
+  personality.F++;
+  const createQuse = createQuestion(
+    questionArray[22],
+    answer1Array[22],
+    answer2Array[22]
+  );
+  const answer1 = createQuse.answer1; // D
+  const answer2 = createQuse.answer2; // C
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion24D();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion24C();
+  });
+};
+
+const handleQuestion23E = () => {
+  personality.E++;
+  const createQuse = createQuestion(
+    questionArray[22],
+    answer1Array[22],
+    answer2Array[22]
+  );
+  const answer1 = createQuse.answer1; // D
+  const answer2 = createQuse.answer2; // C
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion24D();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion24C();
+  });
+};
+
+const handleQuestion22A = () => {
+  personality.A++;
+  const createQuse = createQuestion(
+    questionArray[21],
+    answer1Array[21],
+    answer2Array[21]
+  );
+  const answer1 = createQuse.answer1; // F
+  const answer2 = createQuse.answer2; // E
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion23F();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion23E();
+  });
+};
+
+const handleQuestion22B = () => {
+  personality.B++;
+  const createQuse = createQuestion(
+    questionArray[21],
+    answer1Array[21],
+    answer2Array[21]
+  );
+  const answer1 = createQuse.answer1; // F
+  const answer2 = createQuse.answer2; // E
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion23F();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion23E();
+  });
+};
+
+const handleQuestion21D = () => {
+  personality.D++;
+  const createQuse = createQuestion(
+    questionArray[20],
+    answer1Array[20],
+    answer2Array[20]
+  );
+  const answer1 = createQuse.answer1; // A
+  const answer2 = createQuse.answer2; // B
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion22A();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion22B();
+  });
+};
+
+const handleQuestion21C = () => {
+  personality.C++;
+  const createQuse = createQuestion(
+    questionArray[20],
+    answer1Array[20],
+    answer2Array[20]
+  );
+  const answer1 = createQuse.answer1; // A
+  const answer2 = createQuse.answer2; // B
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion22A();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion22B();
+  });
+};
+
+const handleQuestion20H = () => {
+  personality.H++;
+  const createQuse = createQuestion(
+    questionArray[19],
+    answer1Array[19],
+    answer2Array[19]
+  );
+  const answer1 = createQuse.answer1; // D
+  const answer2 = createQuse.answer2; // C
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion21D();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion21C();
+  });
+};
+
+const handleQuestion20G = () => {
+  personality.G++;
+  const createQuse = createQuestion(
+    questionArray[19],
+    answer1Array[19],
+    answer2Array[19]
+  );
+  const answer1 = createQuse.answer1; // D
+  const answer2 = createQuse.answer2; // C
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion21D();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion21C();
+  });
+};
+
+const handleQuestion19G = () => {
+  personality.G++;
+  const createQuse = createQuestion(
+    questionArray[18],
+    answer1Array[18],
+    answer2Array[18]
+  );
+  const answer1 = createQuse.answer1; // H
+  const answer2 = createQuse.answer2; // G
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion20H();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion20G();
+  });
+};
+
+const handleQuestion19H = () => {
+  personality.H++;
+  const createQuse = createQuestion(
+    questionArray[18],
+    answer1Array[18],
+    answer2Array[18]
+  );
+  const answer1 = createQuse.answer1; // H
+  const answer2 = createQuse.answer2; // G
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion20H();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion20G();
+  });
+};
+
+const handleQuestion18G = () => {
+  personality.G++;
+  const createQuse = createQuestion(
+    questionArray[17],
+    answer1Array[17],
+    answer2Array[17]
+  );
+  const answer1 = createQuse.answer1; // G
+  const answer2 = createQuse.answer2; // H
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion19G();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion19H();
+  });
+};
+
+const handleQuestion18H = () => {
+  personality.H++;
+  const createQuse = createQuestion(
+    questionArray[17],
+    answer1Array[17],
+    answer2Array[17]
+  );
+  const answer1 = createQuse.answer1; // G
+  const answer2 = createQuse.answer2; // H
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion19G();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion19H();
+  });
+};
+
+const handleQuestion17A = () => {
+  personality.A++;
+  const createQuse = createQuestion(
+    questionArray[16],
+    answer1Array[16],
+    answer2Array[16]
+  );
+  const answer1 = createQuse.answer1; // G
+  const answer2 = createQuse.answer2; // H
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion18G();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion18H();
+  });
+};
+
+const handleQuesetion17B = () => {
+  personality.B++;
+  const createQuse = createQuestion(
+    questionArray[16],
+    answer1Array[16],
+    answer2Array[16]
+  );
+  const answer1 = createQuse.answer1; // G
+  const answer2 = createQuse.answer2; // H
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion18G();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion18H();
+  });
+};
+
+const handleQuestion16D = () => {
+  personality.D++;
+  const createQuse = createQuestion(
+    questionArray[15],
+    answer1Array[15],
+    answer2Array[15]
+  );
+  const answer1 = createQuse.answer1; // A
+  const answer2 = createQuse.answer2; // B
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion17A();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion17B();
+  });
+};
+
+const handleQuestion16C = () => {
+  personality.C++;
+  const createQuse = createQuestion(
+    questionArray[15],
+    answer1Array[15],
+    answer2Array[15]
+  );
+  const answer1 = createQuse.answer1; // A
+  const answer2 = createQuse.answer2; // B
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion17A();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion17B();
+  });
+};
+
+const handleQuestion15F = () => {
+  personality.F++;
+  const createQuse = createQuestion(
+    questionArray[14],
+    answer1Array[14],
+    answer2Array[14]
+  );
+  const answer1 = createQuse.answer1; // D
+  const answer2 = createQuse.answer2; // C
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion16D();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion16C();
+  });
+};
+
+const handleQuestion15E = () => {
+  personality.E++;
+  const createQuse = createQuestion(
+    questionArray[14],
+    answer1Array[14],
+    answer2Array[14]
+  );
+  const answer1 = createQuse.answer1; // D
+  const answer2 = createQuse.answer2; // C
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion16D();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion16C();
+  });
+};
+
+const handleQuestion14A = () => {
+  personality.A++;
+  const createQuse = createQuestion(
+    questionArray[13],
+    answer1Array[13],
+    answer2Array[13]
+  );
+  const answer1 = createQuse.answer1; // F
+  const answer2 = createQuse.answer2; // E
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion15F();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion15E();
+  });
+};
+
+const handleQuestion14B = () => {
+  personality.B++;
+  const createQuse = createQuestion(
+    questionArray[13],
+    answer1Array[13],
+    answer2Array[13]
+  );
+  const answer1 = createQuse.answer1; // F
+  const answer2 = createQuse.answer2; // E
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion15F();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion15E();
+  });
+};
+
+const handleQuestion13D = () => {
+  personality.D++;
+  const createQuse = createQuestion(
+    questionArray[12],
+    answer1Array[12],
+    answer2Array[12]
+  );
+  const answer1 = createQuse.answer1; // A
+  const answer2 = createQuse.answer2; // B
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion14A();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion14B();
+  });
+};
+
+const handleQuestion13C = () => {
+  personality.C++;
+  const createQuse = createQuestion(
+    questionArray[12],
+    answer1Array[12],
+    answer2Array[12]
+  );
+  const answer1 = createQuse.answer1; // A
+  const answer2 = createQuse.answer2; // B
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion14A();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion14B();
+  });
+};
+
+const handleQuestion12G = () => {
+  personality.G++;
+  const createQuse = createQuestion(
+    questionArray[11],
+    answer1Array[11],
+    answer2Array[11]
+  );
+  const answer1 = createQuse.answer1; // D
+  const answer2 = createQuse.answer2; // C
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion13D();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion13C();
+  });
+};
+
+const handleQuestion12H = () => {
+  personality.H++;
+  const createQuse = createQuestion(
+    questionArray[11],
+    answer1Array[11],
+    answer2Array[11]
+  );
+  const answer1 = createQuse.answer1; // D
+  const answer2 = createQuse.answer2; // C
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion13D();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion13C();
+  });
+};
+
+const handleQuestion11C = () => {
+  personality.C++;
+  const createQuse = createQuestion(
+    questionArray[10],
+    answer1Array[10],
+    answer2Array[10]
+  );
+  const answer1 = createQuse.answer1; // G
+  const answer2 = createQuse.answer2; // H
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion12G();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion12H();
+  });
+};
+
+const handleQuestion11D = () => {
+  personality.D++;
+  const createQuse = createQuestion(
+    questionArray[10],
+    answer1Array[10],
+    answer2Array[10]
+  );
+  const answer1 = createQuse.answer1; // G
+  const answer2 = createQuse.answer2; // H
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion12G();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion12H();
+  });
+};
+
+const handleQuestion10B = () => {
+  personality.B++;
+  const createQuse = createQuestion(
+    questionArray[9],
+    answer1Array[9],
+    answer2Array[9]
+  );
+  const answer1 = createQuse.answer1; // C
+  const answer2 = createQuse.answer2; // D
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion11C();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion11D();
+  });
+};
+
+const handleQuestion10A = () => {
+  personality.A++;
+  const createQuse = createQuestion(
+    questionArray[9],
+    answer1Array[9],
+    answer2Array[9]
+  );
+  const answer1 = createQuse.answer1; // C
+  const answer2 = createQuse.answer2; // D
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion11C();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion11D();
+  });
+};
+
+const handleQuestion9G = () => {
+  personality.G++;
+  const createQuse = createQuestion(
+    questionArray[8],
+    answer1Array[8],
+    answer2Array[8]
+  );
+  const answer1 = createQuse.answer1; // B
+  const answer2 = createQuse.answer2; // A
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion10B();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion10A();
+  });
+};
+
+const handleQuestion9H = () => {
+  personality.H++;
+  const createQuse = createQuestion(
+    questionArray[8],
+    answer1Array[8],
+    answer2Array[8]
+  );
+  const answer1 = createQuse.answer1; // B
+  const answer2 = createQuse.answer2; // A
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion10B();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion10A();
+  });
+};
+
+const handleQuestion8G = () => {
+  personality.G++;
+  const createQuse = createQuestion(
+    questionArray[7],
+    answer1Array[7],
+    answer2Array[7]
+  );
+  const answer1 = createQuse.answer1; // G
+  const answer2 = createQuse.answer2; // H
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion9G();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion9H();
+  });
+};
+
+const handleQuestion8H = () => {
+  personality.H++;
+  const createQuse = createQuestion(
+    questionArray[7],
+    answer1Array[7],
+    answer2Array[7]
+  );
+  const answer1 = createQuse.answer1; // G
+  const answer2 = createQuse.answer2; // H
+  const questionBox = createQuse.questionBox;
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion9G();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion9H();
+  });
+};
+
+const handleQuestion7B = () => {
+  personality.B++;
+  const createQuse = createQuestion(
+    questionArray[6],
+    answer1Array[6],
+    answer2Array[6]
+  );
+  const answer1 = createQuse.answer1; // G
+  const answer2 = createQuse.answer2; // H
+  const questionBox = createQuse.questionBox;
+
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion8G();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion8H();
+  });
+};
+
+const handleQuestion7A = () => {
+  personality.A++;
+  const createQuse = createQuestion(
+    questionArray[6],
+    answer1Array[6],
+    answer2Array[6]
+  );
+  const answer1 = createQuse.answer1; // G
+  const answer2 = createQuse.answer2; // H
+  const questionBox = createQuse.questionBox;
+
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion8G();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion8H();
+  });
+};
+
+const handleQuestion6C = () => {
+  personality.C++;
+  const createQuse = createQuestion(
+    questionArray[5],
+    answer1Array[5],
+    answer2Array[5]
+  );
+  const answer1 = createQuse.answer1; // B
+  const answer2 = createQuse.answer2; // A
+  const questionBox = createQuse.questionBox;
+
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion7B();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion7A();
+  });
+};
+
+const handleQuestion6D = () => {
+  personality.D++;
+  const createQuse = createQuestion(
+    questionArray[5],
+    answer1Array[5],
+    answer2Array[5]
+  );
+  const answer1 = createQuse.answer1; // B
+  const answer2 = createQuse.answer2; // A
+  const questionBox = createQuse.questionBox;
+
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion7B();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion7A();
+  });
+};
+
+const handleQuestion5F = () => {
+  personality.F++;
+  const createQuse = createQuestion(
+    questionArray[4],
+    answer1Array[4],
+    answer2Array[4]
+  );
+  const answer1 = createQuse.answer1; // C
+  const answer2 = createQuse.answer2; // D
+  const questionBox = createQuse.questionBox;
+
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion6C();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion6D();
+  });
+};
+
+const handleQuestion5E = () => {
+  personality.E++;
+  const createQuse = createQuestion(
+    questionArray[4],
+    answer1Array[4],
+    answer2Array[4]
+  );
+  const answer1 = createQuse.answer1; // C
+  const answer2 = createQuse.answer2; // D
+  const questionBox = createQuse.questionBox;
+
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion6C();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion6D();
+  });
+};
+
+const handleQuestion4A = () => {
+  personality.A++;
+  const createQuse = createQuestion(
+    questionArray[3],
+    answer1Array[3],
+    answer2Array[3]
+  );
+  const answer1 = createQuse.answer1; // F
+  const answer2 = createQuse.answer2; // E
+  const questionBox = createQuse.questionBox;
+
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion5F();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion5E();
+  });
+};
+
+const handleQuestion4B = () => {
+  personality.B++;
+  const createQuse = createQuestion(
+    //네 번째 질문
+    questionArray[3],
+    answer1Array[3],
+    answer2Array[3]
+  );
+  const answer1 = createQuse.answer1; // F
+  const answer2 = createQuse.answer2; // E
+  const questionBox = createQuse.questionBox;
+
+  answer1.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion5F();
+  });
+  answer2.addEventListener("click", () => {
+    textBox.removeChild(questionBox);
+    handleQuestion5E();
+  });
+};
+
+const handleQuestion3C = () => {
   personality.C++;
   const createQuse = createQuestion(
     questionArray[2],
     answer1Array[2],
     answer2Array[2]
   );
-  const answer1 = createQuse.answer1;
-  const answer2 = createQuse.answer2;
+  const answer1 = createQuse.answer1; // A
+  const answer2 = createQuse.answer2; // B
   const questionBox = createQuse.questionBox;
 
   answer1.addEventListener("click", () => {
     textBox.removeChild(questionBox);
-    handleQuestion3A();
+    handleQuestion4A();
   });
   answer2.addEventListener("click", () => {
     textBox.removeChild(questionBox);
-    handleQuestion3B();
+    handleQuestion4B();
   });
 };
 
-const handleQuestion2D = () => {
+const handleQuestion3D = () => {
   personality.D++;
   const createQuse = createQuestion(
     questionArray[2],
     answer1Array[2],
     answer2Array[2]
   );
-  const answer1 = createQuse.answer1;
-  const answer2 = createQuse.answer2;
+  const answer1 = createQuse.answer1; // A
+  const answer2 = createQuse.answer2; // B
   const questionBox = createQuse.questionBox;
 
   answer1.addEventListener("click", () => {
     textBox.removeChild(questionBox);
-    handleQuestion3A();
+    handleQuestion4A();
   });
   answer2.addEventListener("click", () => {
     textBox.removeChild(questionBox);
-    handleQuestion3B();
+    handleQuestion4B();
   });
 };
 
-const handleQuestion1G = () => {
+const handleQuestion2G = () => {
   personality.G++;
   const createQuse = createQuestion(
     questionArray[1],
     answer1Array[1],
     answer2Array[1]
   );
-  const answer1 = createQuse.answer1;
-  const answer2 = createQuse.answer2;
+  const answer1 = createQuse.answer1; // C
+  const answer2 = createQuse.answer2; // D
   const questionBox = createQuse.questionBox;
   answer1.addEventListener("click", () => {
     textBox.removeChild(questionBox);
-    handleQuestion2C();
+    handleQuestion3C();
   });
   answer2.addEventListener("click", () => {
     textBox.removeChild(questionBox);
-    handleQuestion2D();
+    handleQuestion3D();
   });
 };
 
-const handleQuestion1H = () => {
+const handleQuestion2H = () => {
   personality.H++;
   const createQuse = createQuestion(
+    // 두번째 질문
     questionArray[1],
     answer1Array[1],
     answer2Array[1]
   );
-  const answer1 = createQuse.answer1;
-  const answer2 = createQuse.answer2;
+  const answer1 = createQuse.answer1; // C
+  const answer2 = createQuse.answer2; // D
   const questionBox = createQuse.questionBox;
   answer1.addEventListener("click", () => {
     textBox.removeChild(questionBox);
-    handleQuestion2C();
+    handleQuestion3C();
   });
   answer2.addEventListener("click", () => {
     textBox.removeChild(questionBox);
-    handleQuestion2D();
+    handleQuestion3D();
   });
 };
 
-const handleStartBtn = (e) => {
+const handleQuestionStart = (e) => {
   textBox.removeChild(startTextBox);
   const createQuse = createQuestion(
+    // 첫번째 질문
     questionArray[0],
     answer1Array[0],
     answer2Array[0]
   );
-  const answer1 = createQuse.answer1;
-  const answer2 = createQuse.answer2;
+  const answer1 = createQuse.answer1; // G
+  const answer2 = createQuse.answer2; // H
   const questionBox = createQuse.questionBox;
   answer1.addEventListener("click", () => {
     textBox.removeChild(questionBox);
-    handleQuestion1G();
+    handleQuestion2G();
   });
   answer2.addEventListener("click", () => {
     textBox.removeChild(questionBox);
-    handleQuestion1H();
+    handleQuestion2H();
   });
 };
 
-startBtn.addEventListener("click", handleStartBtn);
+startBtn.addEventListener("click", handleQuestionStart);
