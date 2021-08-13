@@ -3,7 +3,7 @@ const textBox = document.querySelector(".textbox"); // 텍스트박스, 무조�
 const startTextBox = document.querySelector(".textbox__start");
 const logo = document.querySelector(".logo");
 const paymon = document.querySelector(".paymon");
-const background = document.querySelector(".background_mond");
+const background = document.querySelector(".mobilebg");
 
 const questionArray = [
   "Q1. 너는 하루정도 여행을 다녀오고 싶을때 어떻게 하는편이야?",
