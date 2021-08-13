@@ -22,17 +22,23 @@
 body {
   font-family: "sunflower_Medium";
   overflow: hidden;
-  background-image: url("../images/mond.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100vh;
 }
 
 .background_mond {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
-  z-index: -5;
+  background-image: url("../images/mond.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  z-index: -99;
+}
+
+.mobilebg {
+  display: none;
 }
 
 .logo {
