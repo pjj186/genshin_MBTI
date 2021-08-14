@@ -235,6 +235,7 @@ const showLumine = () => {
   const characterMBTI = document.createElement("span");
   characterMBTI.innerText =
     "너의 성격유형은 ISTP! 조용하고 말이 없으며 논리적이면서 분석적이고, 객관적으로 인생을 관찰하는 유형이야! 사실적인 정보를 조직하기 좋아하는 반면, 일과 관계 되지 않는 이상 자신을 잘 개방하지 않는 편이야. 그래서 가까운 친구들 외에는 대체로 사람들과 잘 사귀지 않는편이지~ 일상생활에 있어 적응력이 매우 강한타입!";
+  characterMBTI.className = "characterMBTI";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/lumine_avatar.png`;
   characterAvater.className = "avatar";
