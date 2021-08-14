@@ -9,9 +9,9 @@ body {
   overflow: hidden;
 }
 
-body * {
+/* body * {
   touch-action: none;
-}
+} */
 
 footer {
   display: none;
