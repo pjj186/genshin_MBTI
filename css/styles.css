@@ -43,8 +43,10 @@ body {
 
 .logo {
   position: absolute;
-  width: 350px;
-  height: 200px;
+  top: -100px;
+  transform: scale(0.3);
+  border-radius: 50%;
+  border: 10px black solid;
 }
 
 .hide {

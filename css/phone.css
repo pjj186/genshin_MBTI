@@ -33,6 +33,12 @@ footer {
   background-color: rgba(255, 255, 255, 0.432);
 }
 
+.logo {
+  position: absolute;
+  width: 250px;
+  height: 120px;
+}
+
 .textbox__paymon-1 {
   margin-top: 40px;
   display: flex;
@@ -80,7 +86,10 @@ footer {
 }
 
 .paymon {
-  display: none;
+  position: absolute;
+  left: -180px;
+  bottom: -400px;
+  transform: scale(0.7);
 }
 
 .mobilebg {
@@ -95,4 +104,51 @@ footer {
   background-position: center;
   top: 0;
   z-index: -99;
+}
+
+.questionBox {
+  position: absolute;
+  top: -200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.question {
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.btn__question {
+  all: unset;
+  height: auto;
+  width: auto;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.699);
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.finishBox {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.finishMent {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.finishBtn {
+  z-index: 3;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  transform: scale(0.5);
+  border-radius: 50%;
+  border: 1px black solid;
 }

@@ -3,7 +3,8 @@ const textBox = document.querySelector(".textbox"); // 텍스트박스, 무조�
 const startTextBox = document.querySelector(".textbox__start");
 const logo = document.querySelector(".logo");
 const paymon = document.querySelector(".paymon");
-const background = document.querySelector(".mobilebg");
+const backgroundMobile = document.querySelector(".mobilebg");
+const backgroundPC = document.querySelector(".background_mond");
 
 const questionArray = [
   "Q1. 너는 하루정도 여행을 다녀오고 싶을때 어떻게 하는편이야?",
@@ -205,9 +206,17 @@ let personality = {
   H: 0,
 };
 
+let mbtiEI = {};
+let mbtiNS = {};
+let mbtiFT = {};
+let mbtiJP = {};
+
+let result = [];
+
 const showLumine = () => {
   // 여행자, ISTP
-  background.style.display = "none";
+  backgroundPC.style.display = "none";
+  backgroundMobile.style.display = "none";
   document.body.style.backgroundImage = "url('./images/lumine_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
@@ -246,7 +255,8 @@ const showLumine = () => {
 };
 const showRazor = () => {
   // 레이저, ISFP
-  background.style.display = "none";
+  backgroundPC.style.display = "none";
+  backgroundMobile.style.display = "none";
   document.body.style.backgroundImage = "url('./images/razor_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
@@ -285,7 +295,8 @@ const showRazor = () => {
 };
 const showSucrose = () => {
   // 설탕, INTP
-  background.style.display = "none";
+  backgroundPC.style.display = "none";
+  backgroundMobile.style.display = "none";
   document.body.style.backgroundImage =
     "url('./images/sucrose_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
@@ -326,7 +337,8 @@ const showSucrose = () => {
 };
 const showMona = () => {
   // 모나, INTJ
-  background.style.display = "none";
+  backgroundPC.style.display = "none";
+  backgroundMobile.style.display = "none";
   document.body.style.backgroundImage = "url('./images/mona_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
@@ -366,7 +378,8 @@ const showMona = () => {
 };
 const showFischl = () => {
   // 피슬, INFP
-  background.style.display = "none";
+  backgroundPC.style.display = "none";
+  backgroundMobile.style.display = "none";
   document.body.style.backgroundImage = "url('./images/fischl_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
@@ -406,7 +419,8 @@ const showFischl = () => {
 };
 const showXingqiu = () => {
   // 행추, INFJ
-  background.style.display = "none";
+  backgroundPC.style.display = "none";
+  backgroundMobile.style.display = "none";
   document.body.style.backgroundImage =
     "url('./images/xingqiu_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
@@ -447,7 +461,8 @@ const showXingqiu = () => {
 };
 const showXiao = () => {
   // 소, ISTJ
-  background.style.display = "none";
+  backgroundPC.style.display = "none";
+  backgroundMobile.style.display = "none";
   document.body.style.backgroundImage = "url('./images/xiao_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
@@ -487,7 +502,8 @@ const showXiao = () => {
 };
 const showJean = () => {
   // 진, ISFJ
-  background.style.display = "none";
+  backgroundPC.style.display = "none";
+  backgroundMobile.style.display = "none";
   document.body.style.backgroundImage = "url('./images/jean_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
@@ -526,7 +542,8 @@ const showJean = () => {
 };
 const showChilde = () => {
   // 타르탈리아, ESTP
-  background.style.display = "none";
+  backgroundPC.style.display = "none";
+  backgroundMobile.style.display = "none";
   document.body.style.backgroundImage = "url('./images/childe_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
@@ -565,7 +582,8 @@ const showChilde = () => {
 };
 const showClee = () => {
   // 클레, ESFP
-  background.style.display = "none";
+  backgroundPC.style.display = "none";
+  backgroundMobile.style.display = "none";
   document.body.style.backgroundImage = "url('./images/clee_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
@@ -604,7 +622,8 @@ const showClee = () => {
 };
 const showVenti = () => {
   // 벤티, ENTP
-  background.style.display = "none";
+  backgroundPC.style.display = "none";
+  backgroundMobile.style.display = "none";
   document.body.style.backgroundImage = "url('./images/venti_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
@@ -644,7 +663,8 @@ const showVenti = () => {
 };
 const showKeqing = () => {
   // 각청, ENTJ
-  background.style.display = "none";
+  backgroundPC.style.display = "none";
+  backgroundMobile.style.display = "none";
   document.body.style.backgroundImage = "url('./images/keqing_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
@@ -684,7 +704,8 @@ const showKeqing = () => {
 };
 const showHutao = () => {
   // 호두, ENFP
-  background.style.display = "none";
+  backgroundPC.style.display = "none";
+  backgroundMobile.style.display = "none";
   document.body.style.backgroundImage = "url('./images/hutao_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
@@ -723,7 +744,8 @@ const showHutao = () => {
 };
 const showBabara = () => {
   // 바바라, ENFJ
-  background.style.display = "none";
+  backgroundPC.style.display = "none";
+  backgroundMobile.style.display = "none";
   document.body.style.backgroundImage = "url('./images/babara_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
@@ -762,7 +784,8 @@ const showBabara = () => {
 };
 const showNingguang = () => {
   // 응광, ESTJ
-  background.style.display = "none";
+  backgroundPC.style.display = "none";
+  backgroundMobile.style.display = "none";
   document.body.style.backgroundImage =
     "url('./images/ningguang_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
@@ -803,7 +826,8 @@ const showNingguang = () => {
 };
 const showAmber = () => {
   // 엠버, ESFJ
-  background.style.display = "none";
+  backgroundPC.style.display = "none";
+  backgroundMobile.style.display = "none";
   document.body.style.backgroundImage = "url('./images/amber_background.png')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
@@ -840,13 +864,6 @@ const showAmber = () => {
     location.reload();
   });
 };
-
-let mbtiEI = {};
-let mbtiNS = {};
-let mbtiFT = {};
-let mbtiJP = {};
-
-let result = [];
 
 const createQuestion = (questionArr, answerOne, answerTwo) => {
   const questionBox = document.createElement("div");
@@ -951,7 +968,7 @@ const handleFinishB = () => {
   finishBox.className = "finishBox";
   const finishMent = document.createElement("span");
   finishMent.className = "finishMent";
-  finishMent.innerText = "자! 이제 끝났어! 힘들었지? 결과를 확인해봐!";
+  finishMent.innerText = "자! 이제 끝났어! 힘들었지? \n 결과를 확인해봐!";
   const finishBtn = document.createElement("button");
   finishBtn.className = "finishBtn";
   finishBtn.innerText = "결과 보기!";
@@ -3360,6 +3377,7 @@ const handleQuestion2H = () => {
 };
 
 const handleQuestionStart = (e) => {
+  paymon.classList = "hide";
   textBox.removeChild(startTextBox);
   logo.classList.remove("hide");
   logo.classList.add("showing");
