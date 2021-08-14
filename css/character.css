@@ -1,5 +1,5 @@
 .paymon {
-  position: absolute;
+  position: fixed;
   left: 400px;
   bottom: -330px;
   width: 500px;
