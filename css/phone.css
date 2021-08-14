@@ -86,7 +86,7 @@ footer {
 }
 
 .paymon {
-  position: absolute;
+  position: fixed;
   left: -180px;
   bottom: -400px;
   transform: scale(0.7);
