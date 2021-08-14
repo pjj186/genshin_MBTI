@@ -804,7 +804,7 @@ const showNingguang = () => {
   characterMent.className = "characterMent";
   const characterMBTI = document.createElement("span");
   characterMBTI.innerText =
-    "너의 성격유형은 ESTJ! 체계적으로 일하고, 규칙을 준수한다. 사실적 목표 설정에 능하다! 리월 칠성의 천권.. 응광이랑 비슷한 성격이야!";
+    "너의 성격유형은 ESTJ! 체계적으로 일하고, 규칙을 준수하는걸 선호해! 그리고, 사실적 목표 설정에 능하지! 리월 칠성의 천권.. 응광이랑 비슷한 성격이야!";
   characterMBTI.className = "characterMBTI";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/ningguang_avatar.png`;
