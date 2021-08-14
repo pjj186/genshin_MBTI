@@ -147,8 +147,10 @@ footer {
 
 .logo {
   position: absolute;
-  top: 0;
-  transform: scale(0.5);
+  top: 20px;
+  width: 100px;
+  height: 100px;
+  transform: scale(1);
   border-radius: 50%;
   border: 1px black solid;
 }
