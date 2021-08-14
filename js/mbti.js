@@ -440,7 +440,7 @@ const showXingqiu = () => {
   characterMent.className = "characterMent";
   const characterMBTI = document.createElement("span");
   characterMBTI.innerText =
-    "너의 성격유형은 INFJ! 창의력과 통찰력이 뛰어나고, 강한 직관력으로 의미와 진실된 관계를 추구하는 타입이야! 뛰어난 영감으로 말없이 타인에게 영향력을 끼치기도해! 독창성과 사적인 독립심이 강하고, 확고한 신념과 뚜렷한 원리원칙을 생활 속에 가지고 있으면서 공동의 이익을 가져오는 일에 심혈을 기울이는 편이야! 인화와 동료애를 중시하는 경향으로 존경을 받고 사람들이 따르는 타입! 열정과 신념으로 자신들이 믿는 영감을 구현시켜 나갈 때 위대한 정신적 지도자들이 이 유형에서 많이 나와! 남에게 강요하기보다는 행동과 권유로 사람들의 마음을 움직여 따르게 만드는 지도력이 있어!";
+    "너의 성격유형은 INFJ! 창의력과 통찰력이 뛰어나고, 강한 직관력으로 의미와 진실된 관계를 추구하는 타입이야! 뛰어난 영감으로 말없이 타인에게 영향력을 끼치기도해! 독창성과 사적인 독립심이 강하고, 확고한 신념과 뚜렷한 원리원칙을 생활 속에 가지고 있으면서 공동의 이익을 가져오는 일에 심혈을 기울이는 편이야! 인화와 동료애를 중시하는 경향으로 존경을 받고 사람들이 따르는 타입! 남에게 강요하기보다는 행동과 권유로 사람들의 마음을 움직여 따르게 만드는 지도력이 있어!";
   characterMBTI.className = "characterMBTI";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/xingqiu_avatar.png`;
@@ -561,7 +561,7 @@ const showChilde = () => {
   characterMent.className = "characterMent";
   const characterMBTI = document.createElement("span");
   characterMBTI.innerText =
-    "너의 성격유형은 ESTP! 관대하고 느긋하며 어떤 사람이나 사건에 대해서 별로 선입견을 갖지 않으며 개방적인 성격이야! 자신에게나 타인에게 있어 관용적이며, 일을 있는 그대로 보고 받아들이지! 그래서 갈등이나 긴장이 일어나는 상황을 잘 무마하는 능력이 있어! 규범을 적용하기보다는 누구나 만족할 수 있는 해결책을 모색하고 타협하고 적응하는 능력이 있어! 주의집중을 현재 상황에 맞추고, 현실을 있는 그대로 보는 이 유형의 자연스러운 경향으로 인해 현실적으로 야기되는 문제 해결에 뛰어난 능력을 발휘하기도 해!";
+    "너의 성격유형은 ESTP! 관대하고 느긋하며 어떤 사람이나 사건에 대해서 별로 선입견을 갖지 않으며 개방적인 성격이야! 자신에게나 타인에게 있어 관용적이며, 일을 있는 그대로 보고 받아들이지! 그래서 갈등이나 긴장이 일어나는 상황을 잘 무마하는 능력이 있어! 규범을 적용하기보다는 누구나 만족할 수 있는 해결책을 모색하고 타협하고 적응하는 능력이 있어!";
   characterMBTI.className = "characterMBTI";
   const characterAvater = document.createElement("img");
   characterAvater.src = `./images/childe_avatar.png`;
