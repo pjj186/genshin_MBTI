@@ -1,9 +1,14 @@
-# genshin_MBTI
- 
- 자바스크립트, HTML, CSS 를 이용하여 원신 MBTI를 만들어 봤어요!
- 
- 미디어쿼리를 적용해서, PC와 모바일 각각 환경에 맞춰서 페이지를 보여줘요!
+# genshin_MBTI (원신 MBTI)
 
-* 모바일화면에서도 이제 안깨집니다! (패드 류는 아직입니다!)
- 
- 
+바닐라 자바스크립트로 Mihoyo사의 원신 캐릭터를 테마로 만든 MBTI!
+
+- 질문 60개
+- 미디어 쿼리(휴대폰)
+
+# PC
+
+![alt PC View](/images/컴퓨터1.jpg)
+
+# Mobile
+
+![alt Mobile View](/images/모바일1.jpg)
