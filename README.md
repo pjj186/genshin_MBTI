@@ -7,8 +7,8 @@
 
 # PC
 
-![alt pc](./images/pc1.jpg)
+![alt pc](./img/pc1.jpg)
 
 # Mobile
 
-![alt mobile](./images/mobile1.jpg)
+![alt mobile](./img/mobile1.jpg)
