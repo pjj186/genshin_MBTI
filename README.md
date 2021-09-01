@@ -7,8 +7,8 @@
 
 # PC
 
-![alt pc](./img/pc1.jpg)
+![컴퓨터1](https://user-images.githubusercontent.com/66498240/131628582-748c2351-7c0d-4709-9c24-8be557a55765.JPG)
 
 # Mobile
 
-![alt mobile](./img/mobile1.jpg)
+![모바일1](https://user-images.githubusercontent.com/66498240/131628794-0c49ec6c-8730-4e6a-916f-34c34e32da64.JPG)
