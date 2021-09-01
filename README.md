@@ -7,8 +7,8 @@
 
 # PC
 
-![alt PCView](/images/컴퓨터1.jpg)
+![alt PCView](/images/pc1.jpg)
 
 # Mobile
 
-![alt MobileView](/images/모바일1.jpg)
+![alt MobileView](/images/mobile1.jpg)
