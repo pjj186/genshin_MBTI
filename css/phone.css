@@ -185,8 +185,8 @@ footer {
 .restartBtn {
   all: unset;
   position: absolute;
-  bottom: -48px;
-  left: 95px;
+  bottom: 30px;
+  left: 138px;
   height: auto;
   width: 200;
   padding: 10px;
