@@ -214,658 +214,191 @@ let mbtiJP = {};
 
 let result = [];
 
-const showLumine = () => {
-  // 여행자, ISTP
-  backgroundPC.style.display = "none";
-  backgroundMobile.style.display = "none";
-  document.body.style.backgroundImage = "url('./images/lumine_background.png')";
-  document.body.style.backgroundRepeat = "no-repeat";
-  document.body.style.backgroundSize = "cover";
-  paymon.classList = "hide";
-  const restartBtn = document.createElement("button");
-  restartBtn.innerText = "다시 검사 할래?";
-  restartBtn.className = "restartBtn";
-  const characterBox = document.createElement("div");
-  characterBox.className = "characterBox";
-  const characterName = document.createElement("span");
-  characterName.innerText = "루미네(ISTP)";
-  characterName.className = "characterName";
-  const characterMent = document.createElement("span");
-  characterMent.innerText = "「여행자」";
-  characterMent.className = "characterMent";
-  const characterMBTI = document.createElement("span");
-  characterMBTI.innerText =
-    "너의 성격유형은 ISTP! 조용하고 말이 없으며 논리적이면서 분석적이고, 객관적으로 인생을 관찰하는 유형이야! 사실적인 정보를 조직하기 좋아하는 반면, 일과 관계 되지 않는 이상 자신을 잘 개방하지 않는 편이야. 그래서 가까운 친구들 외에는 대체로 사람들과 잘 사귀지 않는편이지~ 일상생활에 있어 적응력이 매우 강한타입!";
-  characterMBTI.className = "characterMBTI";
-  const characterAvater = document.createElement("img");
-  characterAvater.src = `./images/lumine_avatar.png`;
-  characterAvater.className = "avatar";
-  const characterImage = document.createElement("img");
-  characterImage.src = `./images/lumine.png`;
-  characterImage.className = "lumine";
-  textBox.prepend(characterImage);
-  textBox.prepend(characterAvater);
-  textBox.prepend(characterBox);
-  characterBox.prepend(restartBtn);
-  characterBox.prepend(characterMBTI);
-  characterBox.prepend(characterName);
-  characterBox.prepend(characterMent);
-  restartBtn.addEventListener("click", () => {
-    location.reload();
-  });
-};
-const showRazor = () => {
-  // 레이저, ISFP
-  backgroundPC.style.display = "none";
-  backgroundMobile.style.display = "none";
-  document.body.style.backgroundImage = "url('./images/razor_background.png')";
-  document.body.style.backgroundRepeat = "no-repeat";
-  document.body.style.backgroundSize = "cover";
-  paymon.classList = "hide";
-  const restartBtn = document.createElement("button");
-  restartBtn.innerText = "다시 검사 할래?";
-  restartBtn.className = "restartBtn";
-  const characterBox = document.createElement("div");
-  characterBox.className = "characterBox";
-  const characterName = document.createElement("span");
-  characterName.innerText = "레이저(ISFP)";
-  characterName.className = "characterName";
-  const characterMent = document.createElement("span");
-  characterMent.innerText = "「나의「루피카」인 늑대. 그들은 내 가족이야.」";
-  characterMent.className = "characterMent";
-  const characterMBTI = document.createElement("span");
-  characterMBTI.innerText =
-    "너의 성격유형은 ISFP! 말보다는 행동으로 따뜻함을 나타내며, 마음이 따뜻하고 동정적인 성격이야. 마치 양털안감을 넣은 오버코트처럼 속마음이 따뜻한 사람들이 지닌 성격 유형이지~ 그러나 상대방을 잘 알게 될 때까지 이 따뜻함을 드러내지 않는 경향이있어!";
-  characterMBTI.className = "characterMBTI";
-  const characterAvater = document.createElement("img");
-  characterAvater.src = `./images/razor_avatar.png`;
-  characterAvater.className = "avatar";
-  const characterImage = document.createElement("img");
-  characterImage.src = `./images/razor.png`;
-  characterImage.className = "razor";
-  textBox.prepend(characterImage);
-  textBox.prepend(characterAvater);
-  textBox.prepend(characterBox);
-  characterBox.prepend(restartBtn);
-  characterBox.prepend(characterMBTI);
-  characterBox.prepend(characterName);
-  characterBox.prepend(characterMent);
-  restartBtn.addEventListener("click", () => {
-    location.reload();
-  });
-};
-const showSucrose = () => {
-  // 설탕, INTP
-  backgroundPC.style.display = "none";
-  backgroundMobile.style.display = "none";
-  document.body.style.backgroundImage =
-    "url('./images/sucrose_background.png')";
-  document.body.style.backgroundRepeat = "no-repeat";
-  document.body.style.backgroundSize = "cover";
-  paymon.classList = "hide";
-  const restartBtn = document.createElement("button");
-  restartBtn.innerText = "다시 검사 할래?";
-  restartBtn.className = "restartBtn";
-  const characterBox = document.createElement("div");
-  characterBox.className = "characterBox";
-  const characterName = document.createElement("span");
-  characterName.innerText = "설탕(INTP)";
-  characterName.className = "characterName";
-  const characterMent = document.createElement("span");
-  characterMent.innerText =
-    "「이 꽃은 아마...3식 서리꽃 17호 확대버전이었던 것 같아.」";
-  characterMent.className = "characterMent";
-  const characterMBTI = document.createElement("span");
-  characterMBTI.innerText =
-    "너의 성격유형은 INTP! 조용하고 과묵하나 관심이 있는 분야에 대해서는 정말 말을 잘해! 사람들을 중심으로 한 가치보다는 아이디어에 관심이 많으며 매우 분석적이고 객관적 비평을 잘해! 실체보다는 실체가 안고있는 가능성에 관심이 많아! 또 이해가 빠르고 높은 직관력으로 통찰하는 재능과 지적관심이 많은편이야!";
-  characterMBTI.className = "characterMBTI";
-  const characterAvater = document.createElement("img");
-  characterAvater.src = `./images/sucrose_avatar.png`;
-  characterAvater.className = "avatar";
-  const characterImage = document.createElement("img");
-  characterImage.src = `./images/sucrose.png`;
-  characterImage.className = "sucrose";
-  textBox.prepend(characterImage);
-  textBox.prepend(characterAvater);
-  textBox.prepend(characterBox);
-  characterBox.prepend(restartBtn);
-  characterBox.prepend(characterMBTI);
-  characterBox.prepend(characterName);
-  characterBox.prepend(characterMent);
-  restartBtn.addEventListener("click", () => {
-    location.reload();
-  });
-};
-const showMona = () => {
-  // 모나, INTJ
-  backgroundPC.style.display = "none";
-  backgroundMobile.style.display = "none";
-  document.body.style.backgroundImage = "url('./images/mona_background.png')";
-  document.body.style.backgroundRepeat = "no-repeat";
-  document.body.style.backgroundSize = "cover";
-  paymon.classList = "hide";
-  const restartBtn = document.createElement("button");
-  restartBtn.innerText = "다시 검사 할래?";
-  restartBtn.className = "restartBtn";
-  const characterBox = document.createElement("div");
-  characterBox.className = "characterBox";
-  const characterName = document.createElement("span");
-  characterName.innerText = "모나(INTJ)";
-  characterName.className = "characterName";
-  const characterMent = document.createElement("span");
-  characterMent.innerText =
-    "「바꿀 수 없고, 거스를 수 없고, 받아들일 수밖에 없어서 운명인 거지.」";
-  characterMent.className = "characterMent";
-  const characterMBTI = document.createElement("span");
-  characterMBTI.innerText =
-    "너의 성격유형은 INTJ! 행동과 사고에 있어서 독창적이야! 내적인 신념과 비전은 산이라도 움직일 만큼 강한편! 16가지 성격 유형중에서 가장 독립적이고 단호한 성격이야! 때때로, 어떤 문제에 대하여 아주 고집이 센 편이기도해!자신이 가진 영감과 목적을 실현시키려는 의지와 결단력과 인내심을 가지고 있어! 자신과 타인의 능력을 중요시하며, 목적달성을 위하여 온 시간과 노력을 다 바쳐 일하기 때문에 직관력과 통찰력이 활용되는 분야에서 능력을 발휘하는 편이야!.";
-  characterMBTI.className = "characterMBTI";
-  const characterAvater = document.createElement("img");
-  characterAvater.src = `./images/mona_avatar.png`;
-  characterAvater.className = "avatar";
-  const characterImage = document.createElement("img");
-  characterImage.src = `./images/mona.png`;
-  characterImage.className = "mona";
-  textBox.prepend(characterImage);
-  textBox.prepend(characterAvater);
-  textBox.prepend(characterBox);
-  characterBox.prepend(restartBtn);
-  characterBox.prepend(characterMBTI);
-  characterBox.prepend(characterName);
-  characterBox.prepend(characterMent);
-  restartBtn.addEventListener("click", () => {
-    location.reload();
-  });
-};
-const showFischl = () => {
-  // 피슬, INFP
-  backgroundPC.style.display = "none";
-  backgroundMobile.style.display = "none";
-  document.body.style.backgroundImage = "url('./images/fischl_background.png')";
-  document.body.style.backgroundRepeat = "no-repeat";
-  document.body.style.backgroundSize = "cover";
-  paymon.classList = "hide";
-  const restartBtn = document.createElement("button");
-  restartBtn.innerText = "다시 검사 할래?";
-  restartBtn.className = "restartBtn";
-  const characterBox = document.createElement("div");
-  characterBox.className = "characterBox";
-  const characterName = document.createElement("span");
-  characterName.innerText = "피슬(INFP)";
-  characterName.className = "characterName";
-  const characterMent = document.createElement("span");
-  characterMent.innerText =
-    "「너와 난 모두 이세계의 여행자, 여기서 만난 건 분명 운명의 이끌림일 거야.」";
-  characterMent.className = "characterMent";
-  const characterMBTI = document.createElement("span");
-  characterMBTI.innerText =
-    "너의 성격유형은 INFP! 마음이 따뜻하나, 상대방을 잘 알기 전에는 표현을 잘하지 않는성격이야! 또, 자신이 관계하는 사람이나 일에 대하여 강하고 성실하지! 또한 자신이 지향하는 이상에 대하여는 정열적인 신념을 가지고 있어!";
-  characterMBTI.className = "characterMBTI";
-  const characterAvater = document.createElement("img");
-  characterAvater.src = `./images/fischl_avatar.png`;
-  characterAvater.className = "avatar";
-  const characterImage = document.createElement("img");
-  characterImage.src = `./images/fischl.png`;
-  characterImage.className = "fischl";
-  textBox.prepend(characterImage);
-  textBox.prepend(characterAvater);
-  textBox.prepend(characterBox);
-  characterBox.prepend(restartBtn);
-  characterBox.prepend(characterMBTI);
-  characterBox.prepend(characterName);
-  characterBox.prepend(characterMent);
-  restartBtn.addEventListener("click", () => {
-    location.reload();
-  });
-};
-const showXingqiu = () => {
-  // 행추, INFJ
-  backgroundPC.style.display = "none";
-  backgroundMobile.style.display = "none";
-  document.body.style.backgroundImage =
-    "url('./images/xingqiu_background.png')";
-  document.body.style.backgroundRepeat = "no-repeat";
-  document.body.style.backgroundSize = "cover";
-  paymon.classList = "hide";
-  const restartBtn = document.createElement("button");
-  restartBtn.innerText = "다시 검사 할래?";
-  restartBtn.className = "restartBtn";
-  const characterBox = document.createElement("div");
-  characterBox.className = "characterBox";
-  const characterName = document.createElement("span");
-  characterName.innerText = "행추(INFJ)";
-  characterName.className = "characterName";
-  const characterMent = document.createElement("span");
-  characterMent.innerText =
-    "「번뇌에서 벗어나 조용한 곳에서 심신을 수양하면 얼마나 좋을까.」";
-  characterMent.className = "characterMent";
-  const characterMBTI = document.createElement("span");
-  characterMBTI.innerText =
-    "너의 성격유형은 INFJ! 창의력과 통찰력이 뛰어나고, 강한 직관력으로 의미와 진실된 관계를 추구하는 타입이야! 뛰어난 영감으로 말없이 타인에게 영향력을 끼치기도해! 독창성과 사적인 독립심이 강하고, 확고한 신념과 뚜렷한 원리원칙을 생활 속에 가지고 있으면서 공동의 이익을 가져오는 일에 심혈을 기울이는 편이야! 인화와 동료애를 중시하는 경향으로 존경을 받고 사람들이 따르는 타입! 남에게 강요하기보다는 행동과 권유로 사람들의 마음을 움직여 따르게 만드는 지도력이 있어!";
-  characterMBTI.className = "characterMBTI";
-  const characterAvater = document.createElement("img");
-  characterAvater.src = `./images/xingqiu_avatar.png`;
-  characterAvater.className = "avatar";
-  const characterImage = document.createElement("img");
-  characterImage.src = `./images/xingqiu.png`;
-  characterImage.className = "xingqiu";
-  textBox.prepend(characterImage);
-  textBox.prepend(characterAvater);
-  textBox.prepend(characterBox);
-  characterBox.prepend(restartBtn);
-  characterBox.prepend(characterMBTI);
-  characterBox.prepend(characterName);
-  characterBox.prepend(characterMent);
-  restartBtn.addEventListener("click", () => {
-    location.reload();
-  });
-};
-const showXiao = () => {
-  // 소, ISTJ
-  backgroundPC.style.display = "none";
-  backgroundMobile.style.display = "none";
-  document.body.style.backgroundImage = "url('./images/xiao_background.png')";
-  document.body.style.backgroundRepeat = "no-repeat";
-  document.body.style.backgroundSize = "cover";
-  paymon.classList = "hide";
-  const restartBtn = document.createElement("button");
-  restartBtn.innerText = "다시 검사 할래?";
-  restartBtn.className = "restartBtn";
-  const characterBox = document.createElement("div");
-  characterBox.className = "characterBox";
-  const characterName = document.createElement("span");
-  characterName.innerText = "소(ISTJ)";
-  characterName.className = "characterName";
-  const characterMent = document.createElement("span");
-  characterMent.innerText =
-    "「널 지키는 호법이 되어줄게. 하지만 내게 가까이 오지 마. 날 방해하지도 마. 안 그럼 후회하게 될 거야.」";
-  characterMent.className = "characterMent";
-  const characterMBTI = document.createElement("span");
-  characterMBTI.innerText =
-    "너의 성격유형은 ISTJ! 매우 신뢰성이 있고, 사실에 대해 완전하고, 현실적이고, 실용적인 면을 가지고있어! 어떠한 분량의 사실이라도 몰두하고, 기억하며, 이용하고, 정확도에 대해 매우 세심해! 위기상황에 대처할 때에도 차분하며 안정되어 있어! 외면적으로 볼때 차분하게 보이지만, 내면적으로는 상당히 바빠!";
-  characterMBTI.className = "characterMBTI";
-  const characterAvater = document.createElement("img");
-  characterAvater.src = `./images/xiao_avatar.png`;
-  characterAvater.className = "avatar";
-  const characterImage = document.createElement("img");
-  characterImage.src = `./images/xiao.png`;
-  characterImage.className = "xiao";
-  textBox.prepend(characterImage);
-  textBox.prepend(characterAvater);
-  textBox.prepend(characterBox);
-  characterBox.prepend(restartBtn);
-  characterBox.prepend(characterMBTI);
-  characterBox.prepend(characterName);
-  characterBox.prepend(characterMent);
-  restartBtn.addEventListener("click", () => {
-    location.reload();
-  });
-};
-const showJean = () => {
-  // 진, ISFJ
-  backgroundPC.style.display = "none";
-  backgroundMobile.style.display = "none";
-  document.body.style.backgroundImage = "url('./images/jean_background.png')";
-  document.body.style.backgroundRepeat = "no-repeat";
-  document.body.style.backgroundSize = "cover";
-  paymon.classList = "hide";
-  const restartBtn = document.createElement("button");
-  restartBtn.innerText = "다시 검사 할래?";
-  restartBtn.className = "restartBtn";
-  const characterBox = document.createElement("div");
-  characterBox.className = "characterBox";
-  const characterName = document.createElement("span");
-  characterName.innerText = "진(ISFJ)";
-  characterName.className = "characterName";
-  const characterMent = document.createElement("span");
-  characterMent.innerText = "「바람의 신이여, 우릴 인도하소서.」";
-  characterMent.className = "characterMent";
-  const characterMBTI = document.createElement("span");
-  characterMBTI.innerText =
-    "너의 성격유형은 ISFJ! 책임감이 강하고 온정적이며 헌신적이야! 세부적이고 치밀성과 반복을 요하는 일을 끝까지 해나가는 인내력이 높아! 가지고 있는 침착성과 인내력은 가정이나 집단에 안정성을 가져다주지! 다른 사람의 사정을 고려하여 자신과 타인의 감정흐름에 민감해! 일처리에 있어서 현실감각을 가지고 실제적이고 조직적으로 이행하지! 경험을 통해서 자기가 틀렸다고 인정하기까지 어떠한 난관이 있어도 꾸준히 밀고 나가는 유형이야! 온순하고 차분해!";
-  characterMBTI.className = "characterMBTI";
-  const characterAvater = document.createElement("img");
-  characterAvater.src = `./images/jean_avatar.png`;
-  characterAvater.className = "avatar";
-  const characterImage = document.createElement("img");
-  characterImage.src = `./images/jihn.png`;
-  characterImage.className = "jean";
-  textBox.prepend(characterImage);
-  textBox.prepend(characterAvater);
-  textBox.prepend(characterBox);
-  characterBox.prepend(restartBtn);
-  characterBox.prepend(characterMBTI);
-  characterBox.prepend(characterName);
-  characterBox.prepend(characterMent);
-  restartBtn.addEventListener("click", () => {
-    location.reload();
-  });
-};
-const showChilde = () => {
-  // 타르탈리아, ESTP
-  backgroundPC.style.display = "none";
-  backgroundMobile.style.display = "none";
-  document.body.style.backgroundImage = "url('./images/childe_background.png')";
-  document.body.style.backgroundRepeat = "no-repeat";
-  document.body.style.backgroundSize = "cover";
-  paymon.classList = "hide";
-  const restartBtn = document.createElement("button");
-  restartBtn.innerText = "다시 검사 할래?";
-  restartBtn.className = "restartBtn";
-  const characterBox = document.createElement("div");
-  characterBox.className = "characterBox";
-  const characterName = document.createElement("span");
-  characterName.innerText = "타르탈리아(ESTP)";
-  characterName.className = "characterName";
-  const characterMent = document.createElement("span");
-  characterMent.innerText = "「날 어떻게 조종할 거지? 정말 기대되는데!」";
-  characterMent.className = "characterMent";
-  const characterMBTI = document.createElement("span");
-  characterMBTI.innerText =
-    "너의 성격유형은 ESTP! 관대하고 느긋하며 어떤 사람이나 사건에 대해서 별로 선입견을 갖지 않으며 개방적인 성격이야! 자신에게나 타인에게 있어 관용적이며, 일을 있는 그대로 보고 받아들이지! 그래서 갈등이나 긴장이 일어나는 상황을 잘 무마하는 능력이 있어! 규범을 적용하기보다는 누구나 만족할 수 있는 해결책을 모색하고 타협하고 적응하는 능력이 있어!";
-  characterMBTI.className = "characterMBTI";
-  const characterAvater = document.createElement("img");
-  characterAvater.src = `./images/childe_avatar.png`;
-  characterAvater.className = "avatar";
-  const characterImage = document.createElement("img");
-  characterImage.src = `./images/childe.png`;
-  characterImage.className = "childe";
-  textBox.prepend(characterImage);
-  textBox.prepend(characterAvater);
-  textBox.prepend(characterBox);
-  characterBox.prepend(restartBtn);
-  characterBox.prepend(characterMBTI);
-  characterBox.prepend(characterName);
-  characterBox.prepend(characterMent);
-  restartBtn.addEventListener("click", () => {
-    location.reload();
-  });
-};
-const showClee = () => {
-  // 클레, ESFP
-  backgroundPC.style.display = "none";
-  backgroundMobile.style.display = "none";
-  document.body.style.backgroundImage = "url('./images/clee_background.png')";
-  document.body.style.backgroundRepeat = "no-repeat";
-  document.body.style.backgroundSize = "cover";
-  paymon.classList = "hide";
-  const restartBtn = document.createElement("button");
-  restartBtn.innerText = "다시 검사 할래?";
-  restartBtn.className = "restartBtn";
-  const characterBox = document.createElement("div");
-  characterBox.className = "characterBox";
-  const characterName = document.createElement("span");
-  characterName.innerText = "클레(ESFP)";
-  characterName.className = "characterName";
-  const characterMent = document.createElement("span");
-  characterMent.innerText = "「클레는 나가 놀고 싶어~ 함께 밖에 나가 놀아줘~」";
-  characterMent.className = "characterMent";
-  const characterMBTI = document.createElement("span");
-  characterMBTI.innerText =
-    "너의 성격유형은 ESFP! 친절하고 수용적이며 현실적이고 실제적인 성격이야! 어떤 상황에도 잘 적응하며 타협적이고, 선입견이 별로 없으며 개방적이고 관용적이라서 대체로 사람들을 잘 받아들이는 타입이야! 주위에서 진행되고 있는 일들을 알고자 하고 또한 열심히 참견하고 끼어드는 타입이야! 다른 사람의 일이나 활동에 관심이 많고, 새로운 사건 혹은 물건에도 호기심이 많이 때문이야! 이론이나 책을 통해 배우기보다는 경험 등의 실생활을 통해 배우는 것을 좋아해!";
-  characterMBTI.className = "characterMBTI";
-  const characterAvater = document.createElement("img");
-  characterAvater.src = `./images/clee_avatar.png`;
-  characterAvater.className = "avatar";
-  const characterImage = document.createElement("img");
-  characterImage.src = `./images/clee.png`;
-  characterImage.className = "clee";
-  textBox.prepend(characterImage);
-  textBox.prepend(characterAvater);
-  textBox.prepend(characterBox);
-  characterBox.prepend(restartBtn);
-  characterBox.prepend(characterMBTI);
-  characterBox.prepend(characterName);
-  characterBox.prepend(characterMent);
-  restartBtn.addEventListener("click", () => {
-    location.reload();
-  });
-};
-const showVenti = () => {
-  // 벤티, ENTP
-  backgroundPC.style.display = "none";
-  backgroundMobile.style.display = "none";
-  document.body.style.backgroundImage = "url('./images/venti_background.png')";
-  document.body.style.backgroundRepeat = "no-repeat";
-  document.body.style.backgroundSize = "cover";
-  paymon.classList = "hide";
-  const restartBtn = document.createElement("button");
-  restartBtn.innerText = "다시 검사 할래?";
-  restartBtn.className = "restartBtn";
-  const characterBox = document.createElement("div");
-  characterBox.className = "characterBox";
-  const characterName = document.createElement("span");
-  characterName.innerText = "벤티(ENTP)";
-  characterName.className = "characterName";
-  const characterMent = document.createElement("span");
-  characterMent.innerText =
-    "「마침 잘 왔어, 여행자, 네 소원이 뭔지 들어보고 싶어.」";
-  characterMent.className = "characterMent";
-  const characterMBTI = document.createElement("span");
-  characterMBTI.innerText =
-    "너의 성격유형은 ENTP! 독창적인 혁신가이며, 창의력이 풍부하고 항상 새로운 가능성을 찾고 새로운 시도를 즐기는 유형이야! 넓은 안목을 가지고 있으며 다방면에 재능이 있지! 민첩하고 여러 가지 일에 재능을 발휘하며 자신감이 넘쳐나! 사람들의 동향에 대해 기민하고 박식한 편! 다른 사람을 판단하기보다 이해하려고 노력해!";
-  characterMBTI.className = "characterMBTI";
-  const characterAvater = document.createElement("img");
-  characterAvater.src = `./images/venti_avatar.png`;
-  characterAvater.className = "avatar";
-  const characterImage = document.createElement("img");
-  characterImage.src = `./images/venti.png`;
-  characterImage.className = "venti";
-  textBox.prepend(characterImage);
-  textBox.prepend(characterAvater);
-  textBox.prepend(characterBox);
-  characterBox.prepend(restartBtn);
-  characterBox.prepend(characterMBTI);
-  characterBox.prepend(characterName);
-  characterBox.prepend(characterMent);
-  restartBtn.addEventListener("click", () => {
-    location.reload();
-  });
-};
-const showKeqing = () => {
-  // 각청, ENTJ
-  backgroundPC.style.display = "none";
-  backgroundMobile.style.display = "none";
-  document.body.style.backgroundImage = "url('./images/keqing_background.png')";
-  document.body.style.backgroundRepeat = "no-repeat";
-  document.body.style.backgroundSize = "cover";
-  paymon.classList = "hide";
-  const restartBtn = document.createElement("button");
-  restartBtn.innerText = "다시 검사 할래?";
-  restartBtn.className = "restartBtn";
-  const characterBox = document.createElement("div");
-  characterBox.className = "characterBox";
-  const characterName = document.createElement("span");
-  characterName.innerText = "각청(ENTJ)";
-  characterName.className = "characterName";
-  const characterMent = document.createElement("span");
-  characterMent.innerText =
-    "「제군? 흥, 그가 밑바닥 사정을 제대로 알기나 하겠어? 웃기는 소리.」";
-  characterMent.className = "characterMent";
-  const characterMBTI = document.createElement("span");
-  characterMBTI.innerText =
-    "너의 성격유형은 ENTJ! 활동적이며 행정적인 일과 장기계획을 선호하며 논리적이고 분석적이야! 사전 준비를 철저하게 하며 계획하고 조직하고 체계적으로 목적달성을 추진시키는 지도자들이 많아! 비능률적이거나 확실치 않는 상황에 대해서는 별로 인내심이 없어! 그러나 상황이 필요로 할 때는 강하게 대처해! 솔직하고 결정력과 통솔력이 있으며, 거시적 안목으로 일을 밀고 나가! 관념 자체에 집중하는 경향이 있으며, 관념 이면의 사람에게는 관심이 별로 없어!";
-  characterMBTI.className = "characterMBTI";
-  const characterAvater = document.createElement("img");
-  characterAvater.src = `./images/keqing_avatar.png`;
-  characterAvater.className = "avatar";
-  const characterImage = document.createElement("img");
-  characterImage.src = `./images/keqing.png`;
-  characterImage.className = "keqing";
-  textBox.prepend(characterImage);
-  textBox.prepend(characterAvater);
-  textBox.prepend(characterBox);
-  characterBox.prepend(restartBtn);
-  characterBox.prepend(characterMBTI);
-  characterBox.prepend(characterName);
-  characterBox.prepend(characterMent);
-  restartBtn.addEventListener("click", () => {
-    location.reload();
-  });
-};
-const showHutao = () => {
-  // 호두, ENFP
-  backgroundPC.style.display = "none";
-  backgroundMobile.style.display = "none";
-  document.body.style.backgroundImage = "url('./images/hutao_background.png')";
-  document.body.style.backgroundRepeat = "no-repeat";
-  document.body.style.backgroundSize = "cover";
-  paymon.classList = "hide";
-  const restartBtn = document.createElement("button");
-  restartBtn.innerText = "다시 검사 할래?";
-  restartBtn.className = "restartBtn";
-  const characterBox = document.createElement("div");
-  characterBox.className = "characterBox";
-  const characterName = document.createElement("span");
-  characterName.innerText = "호두(ENFP)";
-  characterName.className = "characterName";
-  const characterMent = document.createElement("span");
-  characterMent.innerText = "「해가 뜨면 볕을 쬐고, 달이 뜨면 달을 쬐고——!」";
-  characterMent.className = "characterMent";
-  const characterMBTI = document.createElement("span");
-  characterMBTI.innerText =
-    "너의 성격유형은 ENFP! 열성적이고 창의적이야! 풍부한 상상력과 영감을 가지고 어떤 일을 시작해! 풍부한 충동적 에너지를 가지고 죽흥적으로 일을 재빠르게 해결하는 솔선수범력과 상상력이 있어! 관심이 있는 일이면 무엇이든 척척 해내는 열성파! 뛰어난 통찰력으로 그 사람 안에 있는 성장 발전할 가능성을 들여다봐!";
-  characterMBTI.className = "characterMBTI";
-  const characterAvater = document.createElement("img");
-  characterAvater.src = `./images/hutao_avatar.png`;
-  characterAvater.className = "avatar";
-  const characterImage = document.createElement("img");
-  characterImage.src = `./images/hutao.png`;
-  characterImage.className = "hutao";
-  textBox.prepend(characterImage);
-  textBox.prepend(characterAvater);
-  textBox.prepend(characterBox);
-  characterBox.prepend(restartBtn);
-  characterBox.prepend(characterMBTI);
-  characterBox.prepend(characterName);
-  characterBox.prepend(characterMent);
-  restartBtn.addEventListener("click", () => {
-    location.reload();
-  });
-};
-const showBabara = () => {
-  // 바바라, ENFJ
-  backgroundPC.style.display = "none";
-  backgroundMobile.style.display = "none";
-  document.body.style.backgroundImage = "url('./images/babara_background.png')";
-  document.body.style.backgroundRepeat = "no-repeat";
-  document.body.style.backgroundSize = "cover";
-  paymon.classList = "hide";
-  const restartBtn = document.createElement("button");
-  restartBtn.innerText = "다시 검사 할래?";
-  restartBtn.className = "restartBtn";
-  const characterBox = document.createElement("div");
-  characterBox.className = "characterBox";
-  const characterName = document.createElement("span");
-  characterName.innerText = "바바라(ENFJ)";
-  characterName.className = "characterName";
-  const characterMent = document.createElement("span");
-  characterMent.innerText = "「착실한 노력이야말로 가장 신기한 마법.」";
-  characterMent.className = "characterMent";
-  const characterMBTI = document.createElement("span");
-  characterMBTI.innerText =
-    "너의 성격유형은 ENFJ! 동정심과 동료애가 많으며, 친절하고 재치있는 성격이야! 민첩하고 참을성이 많고 성실해! 사람들과의 인화를 중요시 여기며, 다른사람의 의견을 존중하고 그 가치를 보는 타입! 공동의 선을 위해서 대체로 상대방 의견에 동의하는 경향이 있어! 새로운 아이디어에 대한 호기심이 많아! 쓰기보다는 말로써 생각을 잘 표현하고, 편안하고 능란하게 계획을 제시하거나 조직을 이끌어나가는 능력이 있어!";
-  characterMBTI.className = "characterMBTI";
-  const characterAvater = document.createElement("img");
-  characterAvater.src = `./images/babara_avatar.png`;
-  characterAvater.className = "avatar";
-  const characterImage = document.createElement("img");
-  characterImage.src = `./images/babara.png`;
-  characterImage.className = "babara";
-  textBox.prepend(characterImage);
-  textBox.prepend(characterAvater);
-  textBox.prepend(characterBox);
-  characterBox.prepend(restartBtn);
-  characterBox.prepend(characterMBTI);
-  characterBox.prepend(characterName);
-  characterBox.prepend(characterMent);
-  restartBtn.addEventListener("click", () => {
-    location.reload();
-  });
-};
-const showNingguang = () => {
-  // 응광, ESTJ
-  backgroundPC.style.display = "none";
-  backgroundMobile.style.display = "none";
-  document.body.style.backgroundImage =
-    "url('./images/ningguang_background.png')";
-  document.body.style.backgroundRepeat = "no-repeat";
-  document.body.style.backgroundSize = "cover";
-  paymon.classList = "hide";
-  const restartBtn = document.createElement("button");
-  restartBtn.innerText = "다시 검사 할래?";
-  restartBtn.className = "restartBtn";
-  const characterBox = document.createElement("div");
-  characterBox.className = "characterBox";
-  const characterName = document.createElement("span");
-  characterName.innerText = "응광(ESTJ)";
-  characterName.className = "characterName";
-  const characterMent = document.createElement("span");
-  characterMent.innerText = "「더 많이 벌면... 더 좋은 거 아냐?」";
-  characterMent.className = "characterMent";
-  const characterMBTI = document.createElement("span");
-  characterMBTI.innerText =
-    "너의 성격유형은 ESTJ! 일을 조직하고 프로젝트를 계획하고 출범시키는 능력이 뛰어나! 현실적이고 사실적이며, 체계적, 논리적으로 사업이나 조직체를 이끌어 나가는 타고난 재능을 가졌어! 혼돈스러운 상태나 불분명한 상태 또는 실용성이 없는 분야에는 큰 흥미가 없어! 그러나 필요시에는 언제나 응용하는 힘이 있어! 분명한 규칙을 중요시하고 그에 따라 행동하고 일을 추진하고 완성해 나가! 어떤 계획이나 결정을 내릴 땐 확고한 사실에 바탕을 두고 이행해!";
-  characterMBTI.className = "characterMBTI";
-  const characterAvater = document.createElement("img");
-  characterAvater.src = `./images/ningguang_avatar.png`;
-  characterAvater.className = "avatar";
-  const characterImage = document.createElement("img");
-  characterImage.src = `./images/ningguang.png`;
-  characterImage.className = "ningguang";
-  textBox.prepend(characterImage);
-  textBox.prepend(characterAvater);
-  textBox.prepend(characterBox);
-  characterBox.prepend(restartBtn);
-  characterBox.prepend(characterMBTI);
-  characterBox.prepend(characterName);
-  characterBox.prepend(characterMent);
-
-  restartBtn.addEventListener("click", () => {
-    location.reload();
-  });
-};
-const showAmber = () => {
-  // 엠버, ESFJ
-  backgroundPC.style.display = "none";
-  backgroundMobile.style.display = "none";
-  document.body.style.backgroundImage = "url('./images/amber_background.png')";
-  document.body.style.backgroundRepeat = "no-repeat";
-  document.body.style.backgroundSize = "cover";
-  paymon.classList = "hide";
-  const restartBtn = document.createElement("button");
-  restartBtn.innerText = "다시 검사 할래?";
-  restartBtn.className = "restartBtn";
-  const characterBox = document.createElement("div");
-  characterBox.className = "characterBox";
-  const characterName = document.createElement("span");
-  characterName.innerText = "엠버(ESFJ)";
-  characterName.className = "characterName";
-  const characterMent = document.createElement("span");
-  characterMent.innerText = "「정찰 기사 엠버, 준비 완료!」";
-  characterMent.className = "characterMent";
-  const characterMBTI = document.createElement("span");
-  characterMBTI.innerText =
-    "너의 성격유형은 ESFJ! 동정심과 동료애가 많은 성격이야! 친절하고 재치가 있으며, 다른 사람들에게 관심을 쏟고 인화를 도모하는 일을 중요하게 여겨! 양심적이고 정리정돈을 잘하지! 참을성이 많고 다른 사람들을 잘 도와줘! 또한 다른 사람들의 지지를 받으면 일에 열중해! 그러나 다른 사람들의 무관심한 태도에는 민감해!";
-  characterMBTI.className = "characterMBTI";
-  const characterAvater = document.createElement("img");
-  characterAvater.src = `./images/amber_avatar.png`;
-  characterAvater.className = "avatar";
-  const characterImage = document.createElement("img");
-  characterImage.src = `./images/amber.png`;
-  characterImage.className = "amber";
-  textBox.prepend(characterImage);
-  textBox.prepend(characterAvater);
-  textBox.prepend(characterBox);
-  characterBox.prepend(restartBtn);
-  characterBox.prepend(characterMBTI);
-  characterBox.prepend(characterName);
-  characterBox.prepend(characterMent);
-  restartBtn.addEventListener("click", () => {
-    location.reload();
-  });
+const characters = {
+  lumine: {
+    name: "루미네(ISTP)",
+    ment: "「여행자」",
+    text: "너의 성격유형은 ISTP! 조용하고 말이 없으며 논리적이면서 분석적이고, 객관적으로 인생을 관찰하는 유형이야! 사실적인 정보를 조직하기 좋아하는 반면, 일과 관계 되지 않는 이상 자신을 잘 개방하지 않는 편이야. 그래서 가까운 친구들 외에는 대체로 사람들과 잘 사귀지 않는편이지~ 일상생활에 있어 적응력이 매우 강한타입!",
+    backgroundImg: "url('./images/lumine_background.png')",
+    avatarImg: `./images/lumine_avatar.png`,
+    charImg: `./images/lumine.png`,
+    clsname: "lumine",
+  },
+  razor: {
+    name: "레이저(ISFP)",
+    ment: "「나의「루피카」인 늑대. 그들은 내 가족이야.」",
+    text: "너의 성격유형은 ISFP! 말보다는 행동으로 따뜻함을 나타내며, 마음이 따뜻하고 동정적인 성격이야. 마치 양털안감을 넣은 오버코트처럼 속마음이 따뜻한 사람들이 지닌 성격 유형이지~ 그러나 상대방을 잘 알게 될 때까지 이 따뜻함을 드러내지 않는 경향이있어!",
+    backgroundImg: "url('./images/razor_background.png')",
+    avatarImg: `./images/razor_avatar.png`,
+    charImg: `./images/razor.png`,
+    clsname: "razor",
+  },
+  sucrose: {
+    name: "설탕(INTP)",
+    ment: "「이 꽃은 아마...3식 서리꽃 17호 확대버전이었던 것 같아.」",
+    text: "너의 성격유형은 INTP! 조용하고 과묵하나 관심이 있는 분야에 대해서는 정말 말을 잘해! 사람들을 중심으로 한 가치보다는 아이디어에 관심이 많으며 매우 분석적이고 객관적 비평을 잘해! 실체보다는 실체가 안고있는 가능성에 관심이 많아! 또 이해가 빠르고 높은 직관력으로 통찰하는 재능과 지적관심이 많은편이야!",
+    backgroundImg: "url('./images/sucrose_background.png')",
+    avatarImg: `./images/sucrose_avatar.png`,
+    charImg: `./images/sucrose.png`,
+    clsname: "sucrose",
+  },
+  mona: {
+    name: "모나(INTJ)",
+    ment: "「바꿀 수 없고, 거스를 수 없고, 받아들일 수밖에 없어서 운명인 거지.」",
+    text: "너의 성격유형은 INTJ! 행동과 사고에 있어서 독창적이야! 내적인 신념과 비전은 산이라도 움직일 만큼 강한편! 16가지 성격 유형중에서 가장 독립적이고 단호한 성격이야! 때때로, 어떤 문제에 대하여 아주 고집이 센 편이기도해!자신이 가진 영감과 목적을 실현시키려는 의지와 결단력과 인내심을 가지고 있어! 자신과 타인의 능력을 중요시하며, 목적달성을 위하여 온 시간과 노력을 다 바쳐 일하기 때문에 직관력과 통찰력이 활용되는 분야에서 능력을 발휘하는 편이야!.",
+    backgroundImg: "url('./images/mona_background.png')",
+    avatarImg: `./images/mona_avatar.png`,
+    charImg: `./images/mona_avatar.png`,
+    clsname: "mona",
+  },
+  fischl: {
+    name: "피슬(INFP)",
+    ment: "「너와 난 모두 이세계의 여행자, 여기서 만난 건 분명 운명의 이끌림일 거야.」",
+    text: "너의 성격유형은 INFP! 마음이 따뜻하나, 상대방을 잘 알기 전에는 표현을 잘하지 않는성격이야! 또, 자신이 관계하는 사람이나 일에 대하여 강하고 성실하지! 또한 자신이 지향하는 이상에 대하여는 정열적인 신념을 가지고 있어!",
+    backgroundImg: "url('./images/fischl_background.png')",
+    avatarImg: `./images/fischl_avatar.png`,
+    charImg: `./images/fischl.png`,
+    clsname: "fischl",
+  },
+  xingqiu: {
+    name: "행추(INFJ)",
+    ment: "「번뇌에서 벗어나 조용한 곳에서 심신을 수양하면 얼마나 좋을까.」",
+    text: "너의 성격유형은 INFJ! 창의력과 통찰력이 뛰어나고, 강한 직관력으로 의미와 진실된 관계를 추구하는 타입이야! 뛰어난 영감으로 말없이 타인에게 영향력을 끼치기도해! 독창성과 사적인 독립심이 강하고, 확고한 신념과 뚜렷한 원리원칙을 생활 속에 가지고 있으면서 공동의 이익을 가져오는 일에 심혈을 기울이는 편이야! 인화와 동료애를 중시하는 경향으로 존경을 받고 사람들이 따르는 타입! 남에게 강요하기보다는 행동과 권유로 사람들의 마음을 움직여 따르게 만드는 지도력이 있어!",
+    backgroundImg: "url('./images/xingqiu_background.png')",
+    avatarImg: `./images/xingqiu_avatar.png`,
+    charImg: `./images/xingqiu.png`,
+    clsname: "xingqiu",
+  },
+  xiao: {
+    name: "소(ISTJ)",
+    ment: "「널 지키는 호법이 되어줄게. 하지만 내게 가까이 오지 마. 날 방해하지도 마. 안 그럼 후회하게 될 거야.」",
+    text: "너의 성격유형은 ISTJ! 매우 신뢰성이 있고, 사실에 대해 완전하고, 현실적이고, 실용적인 면을 가지고있어! 어떠한 분량의 사실이라도 몰두하고, 기억하며, 이용하고, 정확도에 대해 매우 세심해! 위기상황에 대처할 때에도 차분하며 안정되어 있어! 외면적으로 볼때 차분하게 보이지만, 내면적으로는 상당히 바빠!",
+    backgroundImg: "url('./images/xiao_background.png')",
+    avatarImg: `./images/xiao_avatar.png`,
+    charImg: `./images/xiao.png`,
+    clsname: "xiao",
+  },
+  jean: {
+    name: "진(ISFJ)",
+    ment: "「바람의 신이여, 우릴 인도하소서.」",
+    text: "너의 성격유형은 ISFJ! 책임감이 강하고 온정적이며 헌신적이야! 세부적이고 치밀성과 반복을 요하는 일을 끝까지 해나가는 인내력이 높아! 가지고 있는 침착성과 인내력은 가정이나 집단에 안정성을 가져다주지! 다른 사람의 사정을 고려하여 자신과 타인의 감정흐름에 민감해! 일처리에 있어서 현실감각을 가지고 실제적이고 조직적으로 이행하지! 경험을 통해서 자기가 틀렸다고 인정하기까지 어떠한 난관이 있어도 꾸준히 밀고 나가는 유형이야! 온순하고 차분해!",
+    backgorundImg: "url('./images/jean_background.png')",
+    avatarImg: `./images/jean_avatar.png`,
+    charImg: `./images/jihn.png`,
+    clsname: "jean",
+  },
+  childe: {
+    name: "타르탈리아(ESTP)",
+    ment: "「날 어떻게 조종할 거지? 정말 기대되는데!」",
+    text: "너의 성격유형은 ESTP! 관대하고 느긋하며 어떤 사람이나 사건에 대해서 별로 선입견을 갖지 않으며 개방적인 성격이야! 자신에게나 타인에게 있어 관용적이며, 일을 있는 그대로 보고 받아들이지! 그래서 갈등이나 긴장이 일어나는 상황을 잘 무마하는 능력이 있어! 규범을 적용하기보다는 누구나 만족할 수 있는 해결책을 모색하고 타협하고 적응하는 능력이 있어!",
+    backgroundImg: "url('./images/childe_background.png')",
+    avatarImg: `./images/childe_avatar.png`,
+    charImg: `./images/childe.png`,
+    clsname: "childe",
+  },
+  clee: {
+    name: "클레(ESFP)",
+    ment: "「클레는 나가 놀고 싶어~ 함께 밖에 나가 놀아줘~」",
+    text: "너의 성격유형은 ESFP! 친절하고 수용적이며 현실적이고 실제적인 성격이야! 어떤 상황에도 잘 적응하며 타협적이고, 선입견이 별로 없으며 개방적이고 관용적이라서 대체로 사람들을 잘 받아들이는 타입이야! 주위에서 진행되고 있는 일들을 알고자 하고 또한 열심히 참견하고 끼어드는 타입이야! 다른 사람의 일이나 활동에 관심이 많고, 새로운 사건 혹은 물건에도 호기심이 많이 때문이야! 이론이나 책을 통해 배우기보다는 경험 등의 실생활을 통해 배우는 것을 좋아해!",
+    backgroundImg: "url('./images/clee_background.png')",
+    avatarImg: `./images/clee_avatar.png`,
+    charImg: `./images/clee.png`,
+    clsname: "clee",
+  },
+  venti: {
+    name: "벤티(ENTP)",
+    ment: "「마침 잘 왔어, 여행자, 네 소원이 뭔지 들어보고 싶어.」",
+    text: "너의 성격유형은 ENTP! 독창적인 혁신가이며, 창의력이 풍부하고 항상 새로운 가능성을 찾고 새로운 시도를 즐기는 유형이야! 넓은 안목을 가지고 있으며 다방면에 재능이 있지! 민첩하고 여러 가지 일에 재능을 발휘하며 자신감이 넘쳐나! 사람들의 동향에 대해 기민하고 박식한 편! 다른 사람을 판단하기보다 이해하려고 노력해!",
+    backgroundImg: "url('./images/venti_background.png')",
+    avatarImg: `./images/venti_avatar.png`,
+    charImg: `./images/venti.png`,
+    clsname: "venti",
+  },
+  keqing: {
+    name: "각청(ENTJ)",
+    ment: "「제군? 흥, 그가 밑바닥 사정을 제대로 알기나 하겠어? 웃기는 소리.」",
+    text: "너의 성격유형은 ENTJ! 활동적이며 행정적인 일과 장기계획을 선호하며 논리적이고 분석적이야! 사전 준비를 철저하게 하며 계획하고 조직하고 체계적으로 목적달성을 추진시키는 지도자들이 많아! 비능률적이거나 확실치 않는 상황에 대해서는 별로 인내심이 없어! 그러나 상황이 필요로 할 때는 강하게 대처해! 솔직하고 결정력과 통솔력이 있으며, 거시적 안목으로 일을 밀고 나가! 관념 자체에 집중하는 경향이 있으며, 관념 이면의 사람에게는 관심이 별로 없어!",
+    backgroundImg: "url('./images/keqing_background.png')",
+    avatarImg: `./images/keqing_avatar.png`,
+    charImg: `./images/keqing.png`,
+    clsname: "keqing",
+  },
+  hutao: {
+    name: "호두(ENFP)",
+    ment: "「해가 뜨면 볕을 쬐고, 달이 뜨면 달을 쬐고——!」",
+    text: "너의 성격유형은 ENFP! 열성적이고 창의적이야! 풍부한 상상력과 영감을 가지고 어떤 일을 시작해! 풍부한 충동적 에너지를 가지고 죽흥적으로 일을 재빠르게 해결하는 솔선수범력과 상상력이 있어! 관심이 있는 일이면 무엇이든 척척 해내는 열성파! 뛰어난 통찰력으로 그 사람 안에 있는 성장 발전할 가능성을 들여다봐!",
+    backgroundImg: "url('./images/hutao_background.png')",
+    avatarImg: `./images/hutao_avatar.png`,
+    charImg: `./images/hutao.png`,
+    clsname: "hutao",
+  },
+  babara: {
+    name: "바바라(ENFJ)",
+    ment: "「착실한 노력이야말로 가장 신기한 마법.」",
+    text: "너의 성격유형은 ENFJ! 동정심과 동료애가 많으며, 친절하고 재치있는 성격이야! 민첩하고 참을성이 많고 성실해! 사람들과의 인화를 중요시 여기며, 다른사람의 의견을 존중하고 그 가치를 보는 타입! 공동의 선을 위해서 대체로 상대방 의견에 동의하는 경향이 있어! 새로운 아이디어에 대한 호기심이 많아! 쓰기보다는 말로써 생각을 잘 표현하고, 편안하고 능란하게 계획을 제시하거나 조직을 이끌어나가는 능력이 있어!",
+    backgroundImg: "url('./images/babara_background.png')",
+    avatarImg: `./images/babara_avatar.png`,
+    charImg: `./images/babara.png`,
+    clsname: "babara",
+  },
+  ningguang: {
+    name: "응광(ESTJ)",
+    ment: "「더 많이 벌면... 더 좋은 거 아냐?」",
+    text: "너의 성격유형은 ESTJ! 일을 조직하고 프로젝트를 계획하고 출범시키는 능력이 뛰어나! 현실적이고 사실적이며, 체계적, 논리적으로 사업이나 조직체를 이끌어 나가는 타고난 재능을 가졌어! 혼돈스러운 상태나 불분명한 상태 또는 실용성이 없는 분야에는 큰 흥미가 없어! 그러나 필요시에는 언제나 응용하는 힘이 있어! 분명한 규칙을 중요시하고 그에 따라 행동하고 일을 추진하고 완성해 나가! 어떤 계획이나 결정을 내릴 땐 확고한 사실에 바탕을 두고 이행해!",
+    backgroundImg: "url('./images/ningguang_background.png')",
+    avatarImg: `./images/ningguang_avatar.png`,
+    charImg: `./images/ningguang.png`,
+    clsname: "ningguang",
+  },
+  amber: {
+    name: "엠버(ESFJ)",
+    ment: "「정찰 기사 엠버, 준비 완료!」",
+    text: "너의 성격유형은 ESFJ! 동정심과 동료애가 많은 성격이야! 친절하고 재치가 있으며, 다른 사람들에게 관심을 쏟고 인화를 도모하는 일을 중요하게 여겨! 양심적이고 정리정돈을 잘하지! 참을성이 많고 다른 사람들을 잘 도와줘! 또한 다른 사람들의 지지를 받으면 일에 열중해! 그러나 다른 사람들의 무관심한 태도에는 민감해!",
+    backgroundImg: "url('./images/amber_background.png')",
+    avatarImg: `./images/amber_avatar.png`,
+    charImg: `./images/amber.png`,
+    clsname: "amber",
+  },
 };
 
+const showCharacters = (character) => {
+  backgroundPC.style.display = "none";
+  backgroundMobile.style.display = "none";
+  document.body.style.backgroundImage = character.backgroundImg;
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "cover";
+  paymon.classList = "hide";
+  const restartBtn = document.createElement("button");
+  restartBtn.innerText = "다시 검사 할래?";
+  restartBtn.className = "restartBtn";
+  const characterBox = document.createElement("div");
+  characterBox.className = "characterBox";
+  const characterName = document.createElement("span");
+  characterName.innerText = character.name;
+  characterName.className = "characterName";
+  const characterMent = document.createElement("span");
+  characterMent.innerText = character.ment;
+  characterMent.className = "characterMent";
+  const characterMBTI = document.createElement("span");
+  characterMBTI.innerText = character.text;
+  characterMBTI.className = "characterMBTI";
+  const characterAvater = document.createElement("img");
+  characterAvater.src = character.avatarImg;
+  characterAvater.className = "avatar";
+  const characterImage = document.createElement("img");
+  characterImage.src = character.charImg;
+  characterImage.className = character.clsname;
+  textBox.prepend(characterImage);
+  textBox.prepend(characterAvater);
+  textBox.prepend(characterBox);
+  characterBox.prepend(restartBtn);
+  characterBox.prepend(characterMBTI);
+  characterBox.prepend(characterName);
+  characterBox.prepend(characterMent);
+  restartBtn.addEventListener("click", () => {
+    location.reload();
+  });
+};
 const createQuestion = (questionArr, answerOne, answerTwo) => {
   const questionBox = document.createElement("div");
   questionBox.className = "questionBox";
@@ -929,37 +462,37 @@ const finishMBTI = () => {
 
   resultMBTI = result.join("");
   if (resultMBTI === "ISTP") {
-    showLumine();
+    showCharacters(characters.lumine);
   } else if (resultMBTI === "ISFP") {
-    showRazor();
+    showCharacters(characters.razor);
   } else if (resultMBTI === "INTP") {
-    showSucrose();
+    showCharacters(characters.sucrose);
   } else if (resultMBTI === "INTJ") {
-    showMona();
+    showCharacters(characters.mona);
   } else if (resultMBTI === "INFP") {
-    showFischl();
+    showCharacters(characters.fischl);
   } else if (resultMBTI === "INFJ") {
-    showXingqiu();
+    showCharacters(characters.xingqiu);
   } else if (resultMBTI === "ISTJ") {
-    showXiao();
+    showCharacters(characters.xiao);
   } else if (resultMBTI === "ISFJ") {
-    showJean();
+    showCharacters(characters.jean);
   } else if (resultMBTI === "ESTP") {
-    showChilde();
+    showCharacters(characters.childe);
   } else if (resultMBTI === "ESFP") {
-    showClee();
+    showCharacters(characters.clee);
   } else if (resultMBTI === "ENTP") {
-    showVenti();
+    showCharacters(characters.venti);
   } else if (resultMBTI === "ENTJ") {
-    showKeqing();
+    showCharacters(characters.keqing);
   } else if (resultMBTI === "ENFP") {
-    showHutao();
+    showCharacters(characters.hutao);
   } else if (resultMBTI === "ENFJ") {
-    showBabara();
+    showCharacters(characters.babara);
   } else if (resultMBTI === "ESTJ") {
-    showNingguang();
+    showCharacters(characters.ningguang);
   } else if (resultMBTI === "ESFJ") {
-    showAmber();
+    showCharacters(characters.amber);
   }
 };
 
