@@ -184,17 +184,15 @@ footer {
 
 .restartBtn {
   all: unset;
-  position: absolute;
-  bottom: 30px;
-  left: 138px;
   height: auto;
-  width: 200;
+  width: 50%;
   padding: 10px;
   border-radius: 10px;
   background-color: #ece2d286;
   text-align: center;
   font-size: 12px;
   cursor: pointer;
+  margin: 0 auto;
   margin-bottom: 10px;
   z-index: 6;
 }

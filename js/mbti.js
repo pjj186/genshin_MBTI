@@ -246,7 +246,7 @@ const showLumine = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
-  body.prepend(restartBtn);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
@@ -286,7 +286,7 @@ const showRazor = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
-  body.prepend(restartBtn);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
@@ -328,7 +328,7 @@ const showSucrose = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
-  body.prepend(restartBtn);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
@@ -369,7 +369,7 @@ const showMona = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
-  body.prepend(restartBtn);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
@@ -410,7 +410,7 @@ const showFischl = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
-  body.prepend(restartBtn);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
@@ -452,7 +452,7 @@ const showXingqiu = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
-  body.prepend(restartBtn);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
@@ -493,7 +493,7 @@ const showXiao = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
-  body.prepend(restartBtn);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
@@ -533,7 +533,7 @@ const showJean = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
-  body.prepend(restartBtn);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
@@ -573,7 +573,7 @@ const showChilde = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
-  body.prepend(restartBtn);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
@@ -613,7 +613,7 @@ const showClee = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
-  body.prepend(restartBtn);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
@@ -654,7 +654,7 @@ const showVenti = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
-  body.prepend(restartBtn);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
@@ -695,7 +695,7 @@ const showKeqing = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
-  body.prepend(restartBtn);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
@@ -735,7 +735,7 @@ const showHutao = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
-  body.prepend(restartBtn);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
@@ -775,7 +775,7 @@ const showBabara = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
-  body.prepend(restartBtn);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
@@ -816,7 +816,7 @@ const showNingguang = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
-  body.prepend(restartBtn);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);
@@ -857,7 +857,7 @@ const showAmber = () => {
   textBox.prepend(characterImage);
   textBox.prepend(characterAvater);
   textBox.prepend(characterBox);
-  body.prepend(restartBtn);
+  characterBox.prepend(restartBtn);
   characterBox.prepend(characterMBTI);
   characterBox.prepend(characterName);
   characterBox.prepend(characterMent);

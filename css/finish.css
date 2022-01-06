@@ -27,16 +27,14 @@
 
 .restartBtn {
   all: unset;
-  position: absolute;
-  bottom: 220px;
-  left: 900px;
   height: auto;
-  width: 200;
+  width: 50%;
   padding: 10px;
   border-radius: 10px;
   background-color: #ece2d286;
   text-align: center;
   cursor: pointer;
+  margin: 0 auto;
   margin-bottom: 10px;
 }
 
