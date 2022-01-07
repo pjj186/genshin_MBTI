@@ -248,7 +248,7 @@ const characters = {
     text: "너의 성격유형은 INTJ! 행동과 사고에 있어서 독창적이야! 내적인 신념과 비전은 산이라도 움직일 만큼 강한편! 16가지 성격 유형중에서 가장 독립적이고 단호한 성격이야! 때때로, 어떤 문제에 대하여 아주 고집이 센 편이기도해!자신이 가진 영감과 목적을 실현시키려는 의지와 결단력과 인내심을 가지고 있어! 자신과 타인의 능력을 중요시하며, 목적달성을 위하여 온 시간과 노력을 다 바쳐 일하기 때문에 직관력과 통찰력이 활용되는 분야에서 능력을 발휘하는 편이야!.",
     backgroundImg: "url('./images/mona_background.png')",
     avatarImg: `./images/mona_avatar.png`,
-    charImg: `./images/mona_avatar.png`,
+    charImg: `./images/mona.png`,
     clsname: "mona",
   },
   fischl: {
