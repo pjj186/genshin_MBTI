@@ -750,7 +750,7 @@ function handleQuestion(count) {
 
   const { question: questionName, answers } = questionObj;
   const [first, second] = answers;
-  const question = createQuestion(`Q${num}. ${questionName}`, first, second);
+  const question = createQuestion(`Q${num}. ${questionName}`, first[0], second[0]);
   const { answer1, answer2, questionBox } = question;
 
   answer1.addEventListener("click", () => {
