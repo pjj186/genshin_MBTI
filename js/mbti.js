@@ -745,24 +745,24 @@ function handleFinish() {
 }
 
 function handleQuestion(count) {
-  let num = (count += 1);
+  let num = (count + 1);
   const questionObj = questions[count];
 
   const { question: questionName, answers } = questionObj;
   const [first, second] = answers;
-  const question = createQuestion(`Q${count}. ${questionName}`, first, second);
+  const question = createQuestion(`Q${num}. ${questionName}`, first, second);
   const { answer1, answer2, questionBox } = question;
 
   answer1.addEventListener("click", () => {
     textBox.removeChild(questionBox);
     personality[first[1]]++;
-    if (count + 1 === questions.length) handleFinish();
+    if (num === questions.length) handleFinish();
     else handleQuestion(num);
   });
   answer2.addEventListener("click", () => {
     textBox.removeChild(questionBox);
     personality[second[1]]++;
-    if (count + 1 === questions.length) handleFinish();
+    if (num === questions.length) handleFinish();
     else handleQuestion(num);
   });
 }
