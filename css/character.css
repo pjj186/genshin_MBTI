@@ -1,9 +1,5 @@
 .paymon {
-  position: fixed;
-  left: 400px;
-  bottom: -330px;
-  width: 500px;
-  height: 700px;
+  width: 50px;
 }
 
 .avatar {
@@ -157,6 +153,7 @@
 
 .characterBox {
   margin-top: 280px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
 }
