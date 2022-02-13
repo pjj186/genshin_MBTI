@@ -695,8 +695,6 @@ const finishMBTI = () => {
     result.push("P");
   }
 
-  console.log(personality)
-
   resultMBTI = result.join("");
   if (resultMBTI === "ISTP") {
     showCharacters(characters.lumine);
