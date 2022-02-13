@@ -675,8 +675,8 @@ function createQuestion(questionArr, answerOne, answerTwo) {
 
   textBox.prepend(questionBox);
 
-  questionBox.prepend(answer1);
-  questionBox.prepend(answer2);
+  questionBox.append(answer1);
+  questionBox.append(answer2);
   questionBox.prepend(question);
 
   return {
