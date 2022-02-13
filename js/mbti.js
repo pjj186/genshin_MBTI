@@ -605,8 +605,6 @@ const characters = {
 };
 
 function showCharacters(character) {
-  const { backgroundImage, backgroundRepeat, backgroundSize } =
-    document.body.style;
   const restartBtn = document.createElement("button");
   const characterBox = document.createElement("div");
   const characterName = document.createElement("span");
@@ -618,9 +616,9 @@ function showCharacters(character) {
   backgroundPC.style.display = "none";
   backgroundMobile.style.display = "none";
 
-  backgroundImage = character.backgroundImg;
-  backgroundRepeat = "no-repeat";
-  backgroundSize = "cover";
+  document.body.style.backgroundImage = character.backgroundImg;
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "cover";
 
   paymon.classList = "hide";
 
@@ -745,12 +743,16 @@ function handleFinish() {
 }
 
 function handleQuestion(count) {
-  let num = (count + 1);
+  let num = count + 1;
   const questionObj = questions[count];
 
   const { question: questionName, answers } = questionObj;
   const [first, second] = answers;
-  const question = createQuestion(`Q${num}. ${questionName}`, first[0], second[0]);
+  const question = createQuestion(
+    `Q${num}. ${questionName}`,
+    first[0],
+    second[0]
+  );
   const { answer1, answer2, questionBox } = question;
 
   answer1.addEventListener("click", () => {
