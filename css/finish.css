@@ -29,16 +29,16 @@
 .restartBtn {
   all: unset;
   height: auto;
-  width: 50%;
+  width: 40%;
   padding: 10px;
   border-radius: 10px;
-  background-color: #ece2d286;
+  background-color: #5890ff;
   text-align: center;
   cursor: pointer;
-  margin: 0 auto;
-  margin-bottom: 10px;
+  margin: 20px auto;
+  color: white;
 }
 
 .restartBtn:hover {
-  background-color: #ece2d2;
+  background-color: #5890ff;
 }
