@@ -1,26 +1,26 @@
-@import "./reset.css";
-@import "./character.css";
-@import "./textbox.css";
-@import "./question.css";
-@import "./finish.css";
+@import './reset.css';
+@import './character.css';
+@import './textbox.css';
+@import './question.css';
+@import './finish.css';
 
 @font-face {
-  font-family: "sunflower_Medium";
-  src: url("../fonts/Sunflower-Medium.ttf");
+  font-family: 'sunflower_Medium';
+  src: url('../fonts/Sunflower-Medium.ttf');
 }
 
 @font-face {
-  font-family: "sunflower_Light";
-  src: url("../fonts/Sunflower-Light.ttf");
+  font-family: 'sunflower_Light';
+  src: url('../fonts/Sunflower-Light.ttf');
 }
 
 @font-face {
-  font-family: "sunflower_Bold";
-  src: url("../fonts/Sunflower-Bold.ttf");
+  font-family: 'sunflower_Bold';
+  src: url('../fonts/Sunflower-Bold.ttf');
 }
 
 body {
-  font-family: "sunflower_Medium";
+  font-family: 'sunflower_Medium';
   overflow: hidden;
   height: 100vh;
 }
@@ -29,7 +29,7 @@ body {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-image: url("../images/mond.jpg");
+  background-image: url('../images/mond.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -42,8 +42,6 @@ body {
 }
 
 .logo {
-  position: absolute;
-  top: -100px;
   transform: scale(0.3);
   border-radius: 50%;
   border: 10px black solid;
@@ -58,7 +56,7 @@ body {
 }
 
 footer {
-  font-family: "sunflower_Bold";
+  font-family: 'sunflower_Bold';
   font-size: 15px;
   position: absolute;
   left: 50%;
