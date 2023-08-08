@@ -178,12 +178,13 @@ footer {
   width: 50%;
   padding: 10px;
   border-radius: 10px;
-  background-color: #ece2d286;
+  background-color: #5890ff;
   text-align: center;
   font-size: 12px;
   cursor: pointer;
   margin: 10px auto;
   z-index: 6;
+  color: white;
 }
 
 .lumine {
