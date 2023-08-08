@@ -20,7 +20,7 @@
 }
 
 body {
-  font-family: 'sunflower_Medium';
+  /* font-family: 'sunflower_Medium'; */
   overflow: hidden;
   height: 100vh;
 }
@@ -42,9 +42,11 @@ body {
 }
 
 .logo {
-  transform: scale(0.3);
+  width: 100px;
+  height: 100px;
+  margin-top: 30px;
   border-radius: 50%;
-  border: 10px black solid;
+  border: 1px black solid;
 }
 
 .hide {

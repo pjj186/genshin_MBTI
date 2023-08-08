@@ -1,4 +1,8 @@
 .textbox {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin: 30px auto;
   width: 750px;
   display: flex;
