@@ -96,7 +96,7 @@ footer {
   height: 100%;
   display: block;
   position: fixed;
-  background-image: url("../images/mobilebg.jpg");
+  background-image: url('../images/mobilebg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -113,6 +113,7 @@ footer {
 
 .question {
   font-size: 14px;
+  margin: 0 20px;
   margin-bottom: 40px;
 }
 
@@ -120,11 +121,13 @@ footer {
   all: unset;
   height: auto;
   width: auto;
+  margin: 0 20px;
   padding: 5px;
   background-color: rgba(255, 255, 255, 0.699);
   text-align: center;
   cursor: pointer;
   margin-bottom: 10px;
+  border-radius: 5px;
   font-size: 12px;
 }
 
