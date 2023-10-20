@@ -12,7 +12,7 @@
 
 .lumine {
   position: absolute;
-  left: -300px;
+  left: -800px;
   z-index: -3;
   opacity: 0.8;
 }
@@ -20,7 +20,7 @@
 .razor {
   position: absolute;
   bottom: -100px;
-  left: -300px;
+  left: -800px;
   z-index: -3;
   opacity: 0.8;
 }
@@ -28,7 +28,7 @@
 .amber {
   position: absolute;
   bottom: -100px;
-  right: -100px;
+  right: -600px;
   z-index: -3;
   opacity: 0.8;
 }
@@ -36,7 +36,7 @@
 .babara {
   position: absolute;
   bottom: -100px;
-  right: -100px;
+  right: -600px;
   z-index: -3;
   opacity: 0.8;
 }
@@ -44,7 +44,7 @@
 .childe {
   position: absolute;
   bottom: -100px;
-  left: -150px;
+  left: -650px;
   z-index: -3;
   opacity: 0.8;
 }
@@ -52,7 +52,7 @@
 .clee {
   position: absolute;
   bottom: -100px;
-  left: -300px;
+  left: -800px;
   z-index: -3;
   opacity: 0.8;
 }
@@ -62,7 +62,7 @@
   height: 700px;
   position: absolute;
   bottom: -100px;
-  left: -250px;
+  left: -800px;
   z-index: -3;
   opacity: 0.8;
 }
@@ -70,7 +70,7 @@
 .hutao {
   position: absolute;
   bottom: -100px;
-  right: -100px;
+  right: -600px;
   z-index: -3;
   opacity: 0.8;
 }
@@ -78,7 +78,7 @@
 .jean {
   position: absolute;
   bottom: -100px;
-  left: -300px;
+  left: -800px;
   z-index: -3;
   opacity: 0.8;
 }
@@ -88,7 +88,7 @@
   height: 700px;
   position: absolute;
   bottom: -100px;
-  left: -250px;
+  left: -750px;
   z-index: -3;
   opacity: 0.8;
 }
@@ -98,7 +98,7 @@
   height: 700px;
   position: absolute;
   bottom: -100px;
-  right: -100px;
+  right: -600px;
   z-index: -3;
   opacity: 0.8;
 }
@@ -108,7 +108,7 @@
   height: 700px;
   position: absolute;
   bottom: -100px;
-  left: -250px;
+  left: -750px;
   z-index: -3;
   opacity: 0.8;
 }
@@ -118,7 +118,7 @@
   height: 700px;
   position: absolute;
   bottom: -100px;
-  left: -250px;
+  left: -750px;
   z-index: -3;
   opacity: 0.8;
 }
@@ -126,7 +126,7 @@
 .venti {
   position: absolute;
   bottom: -100px;
-  right: -550px;
+  right: -1050px;
   z-index: -3;
   opacity: 0.8;
 }
@@ -136,7 +136,7 @@
   height: 700px;
   position: absolute;
   bottom: -100px;
-  left: -300px;
+  left: -800px;
   z-index: -3;
   opacity: 0.8;
 }
@@ -145,7 +145,7 @@
   height: 700px;
   position: absolute;
   bottom: -100px;
-  right: -200px;
+  right: -700px;
   z-index: -3;
   opacity: 0.8;
 }

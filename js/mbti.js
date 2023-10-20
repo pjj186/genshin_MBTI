@@ -525,7 +525,7 @@ const characters = {
     name: '진(ISFJ)',
     ment: '「바람의 신이여, 우릴 인도하소서.」',
     text: '너의 성격유형은 ISFJ! 책임감이 강하고 온정적이며 헌신적이야! 세부적이고 치밀성과 반복을 요하는 일을 끝까지 해나가는 인내력이 높아! 가지고 있는 침착성과 인내력은 가정이나 집단에 안정성을 가져다주지! 다른 사람의 사정을 고려하여 자신과 타인의 감정흐름에 민감해! 일처리에 있어서 현실감각을 가지고 실제적이고 조직적으로 이행하지! 경험을 통해서 자기가 틀렸다고 인정하기까지 어떠한 난관이 있어도 꾸준히 밀고 나가는 유형이야! 온순하고 차분해!',
-    backgorundImg: "url('./images/jean_background.png')",
+    backgroundImg: "url('./images/jean_background.png')",
     avatarImg: `./images/jean_avatar.png`,
     charImg: `./images/jihn.png`,
     clsname: 'jean',
